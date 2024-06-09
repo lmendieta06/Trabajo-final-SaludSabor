@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Ancho del tamaño de mi pantalla */
+    width: 100%;
+}
+
+header {
+    /* ancho */
+    /* vw -> ancho de pantalla
+            vh -> alto de pantalla
+        */
+    width: 100vw;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+.menuNav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.baner {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+/* mi imagen ocupa todo el espacio de su padre */
+.baner img {
+    width: 100%;
+    height: 100%;
+    /* manipular la img */
+    object-fit: fill;
+}
+
+.parrafo-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h2{
+    text-align: center;
+}
+.mision{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px ;
+}
+.vision{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px ;
+}
+.mision img{
+    width: 150px;
+    height: 150px;
+}
+.vision img{
+    width: 150px;
+    height: 150px;
+}
