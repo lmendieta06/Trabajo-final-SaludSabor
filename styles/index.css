@@ -1,0 +1,302 @@
+/* Importaciones */
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+/*font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.cdnfonts.com/css/ruda');
+/* font-family: 'Ruda', sans-serif; */
+
+/* Variables - Pseudoclase */
+:root{
+    /* TIPOGRAFIAS */
+    --tipografiaTexto:'Montserrat', sans-serif;
+    --tipografiaTitulos: 'Ruda', sans-serif;
+    /* PALETA DE COLORES */
+    --colorFondo: white;
+    --colorNav: #FFC963;
+    --colorContraste: #18C78F;
+    --colorContraste2: #57E391;
+    --colorFiguras: #FFE1A9;
+
+}
+
+body{
+    border: 5px solid violet;
+    background-color: var(--colorFondo);
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Ajuste de margin y padding */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 130px;
+    margin-bottom: 0;
+
+}
+
+/* Dar estilos a logo y a inicio de sesion */
+.barraLogo{
+    background-color: var(--colorFondo);
+    width: 100%;
+    height: 100px;
+    /* Hacer que siempre se fije */
+    position: fixed;
+    z-index:100;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--tipografiaTitulos);
+}
+
+.barraLogo img{
+    margin-left: 30px;
+    width: 120px;
+
+}
+
+.inicioSesionOpcion{
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.inicioSesionOpcion p{
+    gap: 10px;
+}
+.inicioSesionOpcion a{
+    text-decoration: none;
+    color: black;
+    font-weight:bolder;
+}
+
+/* Navegador */
+.menuNav{
+    background-color: var(--colorNav);
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    z-index:100;
+    top: 100px;
+    left:0;
+}
+
+.listaMenu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    list-style: none;
+}
+
+.listaMenu a{
+    color: var(--colorFondo);
+    text-decoration: none;
+    font-family: var(--tipografiaTitulos);
+}
+
+/* MAIN */
+main{
+    border: 2px solid red;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+h1, h2, h3{
+    font-family: var(--tipografiaTitulos);
+}
+
+/* PRESENTACION */
+.presentacion{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.descripcionPresentacion{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    padding: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.descripcionPresentacion h1{
+    color: var(--colorContraste);
+    font-size: 45px;
+    font-weight: 1000;
+}
+
+.descripcionPresentacion h2{
+    font-size: 30px;
+}
+
+.descripcionPresentacion p{
+    font-family: var(--tipografiaTexto);
+    font-size: 20px;
+    margin-right: 25%;
+}
+
+.descripcionPresentacion span{
+    font-weight: 700;
+}
+
+.descripcionPresentacion button{
+    height: 50px;
+    width: 80%;
+    background-color: var(--colorContraste);
+    color: var(--colorFondo);
+    font-family: var(--tipografiaTexto);
+    font-weight: 700;
+    font-size: 15px;
+    margin-right: 30px;
+    border: none;
+    border-radius: 10px;
+}
+/* IMAGEN PRESENTACION */
+.imgInicio{
+    right: 0;
+    width: 60%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.imgInicio img{
+    width: 900px;
+}
+/* FUNCIONAMIENTO */
+.funcionamiento{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.funcionamiento h2{
+    color: var(--colorContraste2);
+    font-size: 30px;
+}
+
+.pasosFuncionamiento{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-right: 90px;
+    gap: 15%;
+}
+
+.ilustracionPasos{
+    background-color: var(--colorFiguras);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 300%;
+}
+
+.pasos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    gap: 10px;
+}
+
+.ilustracionPasos svg{
+    width: 100px;
+}
+
+/* ESTILOS DEL CHATBOT */
+
+.chatBot{
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    color: var(--colorFondo);
+    width: 50px;
+    height: 50px;
+    background-color: var(--colorContraste2);
+    border-radius: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatBot i{
+    
+    color:white;
+    text-decoration: none;
+}
+/* FOOTER */
+footer{
+    background-color: var(--colorContraste);
+    width: 100%;
+    height: 250px;
+    color: white;
+    text-align: center;
+}
+
+footer p{
+    font-family: var(--tipografiaTitulos);
+}
+
+.contenidoFooter{
+    height: 200px;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.enlaces{
+    width: 20%;
+    height: 40px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.redes{
+    display: flex;
+    margin-top: 5%;
+    gap: 5%;
+}
+
+.redes a{
+    text-decoration: none;
+    color:white;
+}
+
+.infoFooter{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+
+}
+
+.infoFooter a{
+    color: white;
+    text-decoration: none;
+    font-family: var(--tipografiaTexto);
+}
+
+footer img{
+    width: 250px;
+}
