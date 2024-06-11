@@ -290,7 +290,7 @@ h1, h2, h3{
 /* FOOTER */
 footer{
     background-color: var(--colorContraste);
-    width: 100%;
+    width: 100vw;
     height: 250px;
     color: white;
     text-align: center;
@@ -325,7 +325,7 @@ footer h2{
 }
 
 .enlaces{
-    width: 33%;
+    width: 26%;
     height: 40px;
     margin-top: 30px;
     text-align: left;
