@@ -155,3 +155,86 @@ h1{
     display: flex;
     justify-content: left;
 }
+
+.piePag{
+    width: 100%;
+    height: 292px;
+    background-color: #18C78F;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.piePagInt{
+    width: 100%;
+    height: 222px;
+    background-color: #18C78F;
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr 2fr;
+    grid-auto-rows: 1fr;
+    margin: 0px;
+}
+
+.infoContacto{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+.divInfo{
+    width: auto;
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.iconFooter{
+    width: 30px;
+    height: 30px;
+}
+
+.textInfo{
+    font-family: "Ruda", sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    margin-top: 0px;
+}
+
+.terminos.navega{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulosFooter{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.textTN{
+    font-family: "Ruda", sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+.logoFooter{
+    width: 200px;
+    height: 200px;
+}
+
+.autor{
+    width: 100%;
+    height: 70px;
+    border-top: 2px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+.textAutor{
+    font-family: "Ruda", sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+}
