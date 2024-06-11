@@ -14,6 +14,22 @@ Sitio web con un sistema de domicilios enfocado unicamente en el sector de la co
 
 ## WIREFRAMES
 
+# HOME
+![alt text](image.png)
+# QUIENES SOMOS
+![alt text](image-2.png)
+# RESTAURANTES
+![alt text](image-1.png)
+# MENU
+![alt text](image-3.png)
+# CARRITO DE COMPRAS
+![alt text](image-4.png)
+# CONTACTAMOS
+![alt text](image-5.png)
+# INICIO DE SESION
+![alt text](image-6.png)
+# REGISTRO
+
 ## MOOD BOARD
 
 ![alt text](./assets/imagesReadme/image.png)
