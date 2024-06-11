@@ -15,21 +15,22 @@ Sitio web con un sistema de domicilios enfocado unicamente en el sector de la co
 ## WIREFRAMES
 
 # HOME
-![alt text](image.png)
+![alt text](./assets/imagenesWireframe/image.png)
 # QUIENES SOMOS
-![alt text](image-2.png)
+![alt text](./assets/imagenesWireframe/image-2.png)
 # RESTAURANTES
-![alt text](image-1.png)
+![alt text](./assets/imagenesWireframe/image-1.png)
 # MENU
-![alt text](image-3.png)
+![alt text](./assets/imagenesWireframe/image-3.png)
 # CARRITO DE COMPRAS
-![alt text](image-4.png)
+![alt text](./assets/imagenesWireframe/image-4.png)
 # CONTACTAMOS
-![alt text](image-5.png)
+![alt text](./assets/imagenesWireframe/image-5.png)
 # INICIO DE SESION
-![alt text](image-6.png)
+![alt text](./assets/imagenesWireframe/image-6.png)
 # REGISTRO
-![alt text](image-7.png)
+![alt text](./assets/imagenesWireframe/image-7.png)
+
 ## MOOD BOARD
 
 ![alt text](./assets/imagesReadme/image.png)
