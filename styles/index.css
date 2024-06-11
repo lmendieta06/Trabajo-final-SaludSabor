@@ -72,8 +72,6 @@ header{
 /* Opcion de inicio de sesion */
 .inicioSesionOpcion{
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
     margin-right: 20px;
     width: 20%;
@@ -88,7 +86,7 @@ header{
     font-weight:bolder;
 }
 
-.inicioSesionOpcion div{
+.inicioSesionUser{
     background-color: var(--colorContraste);
     width: 30px;
     height: 30px;
@@ -265,7 +263,7 @@ h1, h2, h3{
     gap: 10px;
 }
 
-.ilustracionPasos svg{
+.ilustracionPasos img{
     width: 100px;
 }
 
@@ -289,6 +287,24 @@ h1, h2, h3{
     
     color:white;
     text-decoration: none;
+}
+
+/* ESTILOS DE MODALES */
+
+/* MODAL DE CONSTRUCCION */
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(128, 128, 128, 0.4) ;
+}
+
+.modalContainer{
+    width: 90%;
+    background-color: var(--colorFondo);
 }
 /* FOOTER */
 footer{
