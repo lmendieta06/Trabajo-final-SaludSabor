@@ -91,7 +91,7 @@ header {
 .img-log {
     border-radius: 50px;
 }
-
+/* aca finaliza el encabezado y empieza el menu navegador */
 nav {
     width: 100%;
     height: 30px;
@@ -211,7 +211,13 @@ h2 {
     text-align: center;
     font-size: 36px;
     font-family: var(--textContent);
-
+}
+.vision p span{
+    color: var(--colortexto);
+    font-weight: bold;
+}
+strong{
+    color: var(--colortexto2);
 }
 
 .mision img {
@@ -235,17 +241,17 @@ h2 {
 }
 
 .equipo img {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    border: solid 6px var(--colortexto2);
-
+    border: solid 6px rgb(36, 226, 112);
+    background: linear-gradient(90deg,green, white);
 
 }
 
 h4 {
     font-family: var(--textContent);
-    font-size: 15px;
+    font-size: 20px;
     color: var(--colorcontraste);
     text-decoration-line: overline;
 
@@ -291,6 +297,7 @@ footer {
     font-size: 20px;
     margin-bottom: 40px;
     text-align: left;
+    text-decoration-line: underline;
 }
 .htres{
     font-size: 15px;
@@ -320,12 +327,15 @@ footer p {
     height: 40px;
     margin-top: 30px;
     text-align: left;
+  
 
 }
 
 .redes {
+    
     display: flex;
     margin-top: 5%;
+    margin-right: 50px;
     gap: 5%;
 
 }
@@ -339,12 +349,55 @@ footer p {
     margin-top: 5%;
     display: flex;
     flex-direction: column;
-    gap: 5%;
+    gap: 15px;
+    
 
 }
 
 .infoFooter a {
-    color: white;
+    
+    color:  white;
     text-decoration: none;
     font-family: var(--tipografiaTexto);
+    
+}
+
+/* aqui emmpieza el responsive para dispositivos moviles */
+@media (max-width:490px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        /* ancho */
+        /* vw -> ancho de pantalla
+                vh -> alto de pantalla
+            */
+        width: 230vw;
+        margin: 0 auto;
+    
+    }
+main {
+    width: 230vw;
+}
+
+
+.vision img,
+.mision img{
+    width: 150px;
+    height:150px;
+}
+.vision p,
+.mision p{
+    font-size: 30px;
+}
+
+.equipo img{
+    width: 180px;
+    height: 180px;
+}
+footer{
+    width: 230vw;
+}
+
 }
