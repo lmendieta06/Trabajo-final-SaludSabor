@@ -1,12 +1,33 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
+
+:root {
+    --colortexto: #18C78F;
+    --colortexto2: #FFC963;
+    --colorcontraste: #57E391;
+    --textTitle: "Ruda", sans-serif;
+    --textContent: 'Montserrat', sans-serif;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
+
+
+
+
 
 body {
     /* Ancho del tamaño de mi pantalla */
     width: 100%;
+
+
 }
 
 header {
@@ -15,34 +36,96 @@ header {
             vh -> alto de pantalla
         */
     width: 100vw;
-
-
-
-
-
-
-
-
-
-
-
-
-
+    margin: 0 auto;
 
 }
-.menuNav{
+
+.InicioLogo {
+    background-color: #ffffff;
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+
 }
 
-.baner {
+.InicioLogo img {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    margin-left: 10px;
+
+}
+
+.ContenedorInicio ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 40px;
+}
+
+.ContenedorInicio ul li a span {
+    font-weight: bolder;
+    color: black;
+}
+
+.ContenedorInicio ul li img {
+
+    border-radius: 15px;
+}
+
+.ContenedorInicio Img {
+    width: 50px;
+    height: 45px;
+    margin-left: -5px;
+    margin-top: 5px;
+
+}
+
+.img-log {
+    border-radius: 50px;
+}
+
+nav {
     width: 100%;
-    height: 80%;
+    height: 30px;
+    background-color: #FFC963;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    list-style: none;
+    position: fixed;
+    z-index: 100;
+    top: 100px;
+    left: 0;
+}
+
+
+h3 {
+    margin: 0px;
+    font-size: 17px;
+    font-family: "Ruda", sans-serif;
+    color: #ffffff;
+
+}
+
+
+.baner {
+
+    width: 100%;
+    height: 120vh;
     position: relative;
     display: inline-block;
     text-align: center;
+
+
 }
 
 /* mi imagen ocupa todo el espacio de su padre */
@@ -50,33 +133,218 @@ header {
     width: 100%;
     height: 100%;
     /* manipular la img */
-    object-fit: fill;
+    object-fit: cover;
+    filter: brightness(0.7);
+    /* Reducir el brillo al 80% */
+
+}
+
+
+h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    font-family: var(--textTitle);
+    font-size: 93px;
+    font-weight: bolder;
+    color: white;
+
+
 }
 
 .parrafo-banner {
+    width: 600px;
+    height: 300px;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 36px;
+
+    line-height: 50px;
+    font-family: var(--textContent);
+    font-weight: bold;
+    color: white;
+    text-align: center;
+
 }
-h2{
+
+main {
+    margin-top: 80px;
+}
+
+h2 {
+    font-size: 48px;
+    text-align: center;
+    color: var(--colortexto);
+    font-family: var(--textTitle);
+    margin-bottom: 100px;
+}
+
+.mision {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.mision p {
+    width: 470px;
+    height: 314px;
+    text-align: center;
+    font-size: 36px;
+    font-family: var(--textContent);
+
+}
+
+.vision {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+
+.vision p {
+    width: 470px;
+    height: 314px;
+    text-align: center;
+    font-size: 36px;
+    font-family: var(--textContent);
+
+}
+
+.mision img {
+    width: 150px;
+    height: 150px;
+}
+
+.vision img {
+    width: 150px;
+    height: 150px;
+}
+
+.equipo {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+
+
+}
+
+.equipo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid 6px var(--colortexto2);
+
+
+}
+
+h4 {
+    font-family: var(--textContent);
+    font-size: 15px;
+    color: var(--colorcontraste);
+    text-decoration-line: overline;
+
+}
+
+
+
+.gabriel h4 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border: sol;
+}
+
+.laura h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.leonhard h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* foooooter */
+footer {
+   
+    background-color:var(--colortexto);
+    width: 100%;
+    height: 250px;
+    color: white;
     text-align: center;
 }
-.mision{
+
+.hdos {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+.htres{
+    font-size: 15px;
+}
+footer p {
+    
+
+    font-family: var(--textTitle);
+}
+
+.contenidoFooter {
+  
+    height: 230px;
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
     justify-content: space-around;
-    margin: 20px ;
 }
-.vision{
+
+.contenidoFooter img {
+    width: 230px;
+    height: 230px;
+}
+
+.enlaces {
+    width: 20%;
+    height: 40px;
+    margin-top: 30px;
+    text-align: left;
+
+}
+
+.redes {
     display: flex;
-    justify-content: space-around;
-    margin: 20px ;
+    margin-top: 5%;
+    gap: 5%;
+
 }
-.mision img{
-    width: 150px;
-    height: 150px;
+
+.redes a {
+    text-decoration: none;
+    color: white;
 }
-.vision img{
-    width: 150px;
-    height: 150px;
+
+.infoFooter {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+
+}
+
+.infoFooter a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--tipografiaTexto);
 }
