@@ -18,18 +18,21 @@
 
 }
 
-body{
-    border: 5px solid violet;
-    background-color: var(--colorFondo);
-    overflow-x: hidden;
-    box-sizing: border-box;
-    width: 100%;
-}
 
 /* Ajuste de margin y padding */
 *{
     margin: 0;
     padding: 0;
+}
+
+/* Inicio de body */
+body{
+    /* border: 5px solid violet; */
+    background-color: var(--colorFondo);
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100%;
 }
 
 /* HEADER */
@@ -56,16 +59,24 @@ header{
     font-family: var(--tipografiaTitulos);
 }
 
+.logo{
+    width: 80%;
+}
 .barraLogo img{
     margin-left: 30px;
     width: 120px;
 
+
 }
 
+/* Opcion de inicio de sesion */
 .inicioSesionOpcion{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     margin-right: 20px;
+    width: 20%;
 }
 
 .inicioSesionOpcion p{
@@ -77,6 +88,17 @@ header{
     font-weight:bolder;
 }
 
+.inicioSesionOpcion div{
+    background-color: var(--colorContraste);
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
 /* Navegador */
 .menuNav{
     background-color: var(--colorNav);
@@ -86,13 +108,16 @@ header{
     z-index:100;
     top: 100px;
     left:0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .listaMenu{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    text-align: center;
     align-items: center;
     gap: 5%;
     list-style: none;
@@ -106,9 +131,9 @@ header{
 
 /* MAIN */
 main{
-    border: 2px solid red;
-    width: 100%;
-    height: auto;
+    /* border: 2px solid red; */
+    width: 100vw;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,15 +147,18 @@ h1, h2, h3{
 
 /* PRESENTACION */
 .presentacion{
+    /* border: 2px solid green; */
     width: 100%;
-    height: auto;
+    height: 30%;
     display: flex;
 }
 
+/* Primer div, texto y boton */
 .descripcionPresentacion{
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 5%;
     padding: 30px;
     margin-top: 30px;
@@ -150,11 +178,15 @@ h1, h2, h3{
 .descripcionPresentacion p{
     font-family: var(--tipografiaTexto);
     font-size: 20px;
-    margin-right: 25%;
+    margin-right: 20%;
 }
 
 .descripcionPresentacion span{
     font-weight: 700;
+}
+
+.descripcionPresentacion a{
+    width: 80%;
 }
 
 .descripcionPresentacion button{
@@ -172,13 +204,13 @@ h1, h2, h3{
 /* IMAGEN PRESENTACION */
 .imgInicio{
     right: 0;
-    width: 60%;
-    height: 500px;
+    width: 50%;
+    height: 100%;
     overflow: hidden;
 }
 
 .imgInicio img{
-    width: 900px;
+    width:100%;
 }
 /* FUNCIONAMIENTO */
 .funcionamiento{
@@ -192,14 +224,23 @@ h1, h2, h3{
     font-size: 30px;
 }
 
-.pasosFuncionamiento{
-    display: flex;
-    margin-top: 50px;
-    margin-left: 90px;
-    margin-right: 90px;
-    gap: 15%;
+.funcionamiento h3{
+    font-weight: 700;
+    font-size: 15px;
 }
 
+/* Contenedor de todas las ilustraciones */
+.pasosFuncionamiento{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    /* margin-left: 90px;
+    margin-right: 90px; */
+    /* gap: 10%; */
+}
+
+/* Div que contiene la imagen */
 .ilustracionPasos{
     background-color: var(--colorFiguras);
     width: 150px;
@@ -210,7 +251,10 @@ h1, h2, h3{
     border-radius: 300%;
 }
 
+/* Contiene la ilustracion y el texto relacionado */
 .pasos{
+    /* border: 2px solid blue; */
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -252,11 +296,15 @@ footer{
     text-align: center;
 }
 
-footer p{
-    font-family: var(--tipografiaTitulos);
+footer h2{
+    font-size: 20px;
+    font-weight: 700;
 }
 
+
+
 .contenidoFooter{
+    width: 100%;
     height: 200px;
     padding-left: 5%;
     padding-right: 5%;
@@ -265,8 +313,19 @@ footer p{
     /* align-items: center; */
 }
 
+/* Contiene todas las clases enlace */
+.enlacesFooter{
+    height: 200px;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid blue; */
+    width: 80%;
+}
+
 .enlaces{
-    width: 20%;
+    width: 33%;
     height: 40px;
     margin-top: 30px;
     text-align: left;
@@ -278,11 +337,14 @@ footer p{
     gap: 5%;
 }
 
-.redes a{
+.redes a, .redes p{
     text-decoration: none;
     color:white;
+    font-size: 20px;
+    font-family: var(--tipografiaTexto);
 }
 
+/* Padre directo de las a */
 .infoFooter{
     margin-top: 5%;
     display: flex;
@@ -294,9 +356,143 @@ footer p{
 .infoFooter a{
     color: white;
     text-decoration: none;
+    font-size: 20px;
     font-family: var(--tipografiaTexto);
 }
 
-footer img{
+/* Logo */
+.imgFooter{
+    width: 20%;
+    height: 120px;
+}
+
+.imgFooter img{
     width: 250px;
+}
+
+/* Copyright */
+
+.copyRight{
+    margin:20px;
+    font-family: var(--tipografiaTitulos);
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+}
+
+/* Estilos para pantallas medianas - pequeñas */
+@media screen and (max-width:1100px){
+
+    .descripcionPresentacion p{
+        font-family: var(--tipografiaTexto);
+        font-size: 15px;
+        margin-right: 10%;
+    }
+    
+    .descripcionPresentacion h1{
+        color: var(--colorContraste);
+        font-size: 30px;
+        font-weight: 1000;
+    }
+    
+    .descripcionPresentacion h2{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:830px){
+
+    .menuNav{
+        background-color: var(--colorNav);
+        width: 100%;
+        height: 45px;
+        position: fixed;
+        z-index:100;
+        top: 100px;
+        left:0;
+    }
+
+    .logo{
+        width: 60%;
+    }
+
+    .inicioSesionOpcion{
+        width: 40%;
+    }
+
+    .descripcionPresentacion{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5%;
+        padding: 30px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .descripcionPresentacion p{
+        font-family: var(--tipografiaTexto);
+        font-size: 15px;
+        margin-right: 5%;
+    }
+
+    .imgInicio{
+        right: 0;
+        width: 0%;
+        height: 200%;
+        overflow: hidden;
+    }
+
+    .redes a, .redes p{
+        text-decoration: none;
+        color:white;
+        font-size: 15px;
+        font-family: var(--tipografiaTexto);
+    }
+
+    .infoFooter a{
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: var(--tipografiaTexto);
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+
+@media screen and (max-width:650px){
+    .listaMenu a{
+        color: var(--colorFondo);
+        text-decoration: none;
+        font-family: var(--tipografiaTitulos);
+        font-size: 15px;
+    }
+
+    footer{
+        height: 450px;
+        /* border: 5px solid magenta ; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .enlacesFooter{
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        width: 80%;
+        padding-bottom: 10px;
+    }
+    .enlaces{
+        width: 100%;
+        height: 100%;
+    }
+
+    .copyRight{
+        height: 50px;
+        width: 100%;
+        font-size: 15px;
+    }
+
 }
