@@ -102,7 +102,7 @@ header{
 /* Navegador */
 .menuNav{
     background-color: var(--colorNav);
-    width: 100%;
+    width: 110%;
     height: 30px;
     position: fixed;
     z-index:100;
@@ -132,7 +132,7 @@ header{
 /* MAIN */
 main{
     /* border: 2px solid red; */
-    width: 100vw;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -222,11 +222,14 @@ h1, h2, h3{
 .funcionamiento h2{
     color: var(--colorContraste2);
     font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .funcionamiento h3{
     font-weight: 700;
     font-size: 15px;
+
 }
 
 /* Contenedor de todas las ilustraciones */
@@ -234,7 +237,7 @@ h1, h2, h3{
     /* border: 2px solid red; */
     width: 100%;
     display: flex;
-    margin-top: 50px;
+    margin-top: 70px;
     /* margin-left: 90px;
     margin-right: 90px; */
     /* gap: 10%; */
@@ -291,7 +294,7 @@ h1, h2, h3{
 footer{
     background-color: var(--colorContraste);
     width: 100vw;
-    height: 250px;
+    height: 300px;
     color: white;
     text-align: center;
 }
@@ -400,6 +403,11 @@ footer h2{
     .descripcionPresentacion h2{
         font-size: 20px;
     }
+
+    footer{
+        height: 500px;
+        padding-top: 10%;
+    }
 }
 
 @media screen and (max-width:830px){
@@ -464,6 +472,7 @@ footer h2{
 /* Estilos para pantallas pequeñas */
 
 @media screen and (max-width:650px){
+
     .listaMenu a{
         color: var(--colorFondo);
         text-decoration: none;
@@ -471,11 +480,10 @@ footer h2{
         font-size: 15px;
     }
 
+
     footer{
-        height: 450px;
+        height: 550px;
         /* border: 5px solid magenta ; */
-        display: flex;
-        flex-direction: column;
     }
 
     .enlacesFooter{
@@ -491,9 +499,12 @@ footer h2{
     }
 
     .copyRight{
+        color: var(--colorContraste);
         height: 50px;
         width: 100%;
         font-size: 15px;
+        padding: 0;
+        margin: 0;
     }
 
 }
