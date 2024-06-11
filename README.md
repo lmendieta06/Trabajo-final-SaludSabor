@@ -29,7 +29,7 @@ Sitio web con un sistema de domicilios enfocado unicamente en el sector de la co
 # INICIO DE SESION
 ![alt text](image-6.png)
 # REGISTRO
-
+![alt text](image-7.png)
 ## MOOD BOARD
 
 ![alt text](./assets/imagesReadme/image.png)
