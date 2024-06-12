@@ -361,6 +361,177 @@ footer p {
     font-family: var(--tipografiaTexto);
     
 }
+/* estilos del MODAL */
+.modal {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+
+
+}
+.modal--mostrar{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    ---transition: transform .8s .8s;
+}
+.modal-contenedor {
+
+    margin: 0 auto;
+    width: 800px;
+    height: 90vh;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    display: grid;
+    gap: 15px;
+    place-items: center;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+.modal img {
+    margin-top: -10px;
+    width: 300px;
+}
+
+article {
+    width: 38vw;
+    background: #daac5632;
+    font-family: var(--textTitle);
+   
+}
+
+
+h4 {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color:var(--colorcontraste);
+    font-family: var(--textContent);
+
+
+}
+
+.modal-titulo {
+    font-size: 45px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    color:var(--colorcontraste);
+
+
+}
+
+
+.input-login {
+    width: 550px;
+    height: 250px;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px 30px;
+font-family: var(--textContent);
+}
+
+.controles {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    font-family: var(--textContent);
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 7px 5px 5px #8a8686;
+}
+
+
+
+
+.botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 30%;
+    height: 40px;
+    border-radius: 7px;
+    background: var(--colortexto2);
+    border: none;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+.botones:hover{
+    background-color: #ffffff;
+    border: solid #FFC963;
+    color: var(--colortexto2);
+}
+
+.input-login p {
+    height: 40px;
+    text-align: center;
+    color: var(--colortexto)
+}
+
+strong {
+    font-weight: bolder;
+}
+
+.input-login a {
+    color: var(--colortexto);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: var(--textContent);
+
+}
+
+.input-login a span {
+    color: var(--colortexto2);
+    font-weight: bolder;
+    font-family: var(--textContent);
+    transition: transform .2s;
+}
+
+.input-login a span:hover {
+  color:rgb(14, 14, 12);
+  
+
+}
+
+.Cerrar-modal{
+   font-family: var(--textTitle);
+    font-size: 35px;
+    text-decoration: none;
+   font-weight: bolder;
+    padding:4px 15px;
+    background-color:rgba(0, 0, 0, 0.179);
+    border-radius: 15px;
+    color: white;
+    position: absolute;
+    top:3%;
+    left:91%
+}
+.Cerrar-modal:hover{
+    border: solid black;
+    background: white;
+    color: black;
+}
+
 
 /* aqui emmpieza el responsive para dispositivos moviles */
 @media (max-width:490px) {
