@@ -361,9 +361,12 @@ h1, h2, h3{
 footer{
     background-color: var(--colorContraste);
     width: 100vw;
-    height: 300px;
+    height: auto;
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 footer h2{
@@ -371,11 +374,9 @@ footer h2{
     font-weight: 700;
 }
 
-
-
 .contenidoFooter{
     width: 100%;
-    height: 200px;
+    height: auto;
     padding-left: 5%;
     padding-right: 5%;
     display: flex;
@@ -385,7 +386,7 @@ footer h2{
 
 /* Contiene todas las clases enlace */
 .enlacesFooter{
-    height: 200px;
+    height: auto;
     padding-left: 5%;
     padding-right: 5%;
     display: flex;
@@ -451,6 +452,7 @@ footer h2{
     height: 50px;
     font-size: 20px;
 }
+
 
 /* Estilos para pantallas medianas - pequeñas */
 @media screen and (max-width:1100px){
@@ -547,31 +549,30 @@ footer h2{
         font-size: 15px;
     }
 
-
     footer{
-        height: 550px;
-        /* border: 5px solid magenta ; */
+        height: auto;
     }
-
     .enlacesFooter{
         display: flex;
         flex-direction: column;
-        height: 400px;
-        width: 80%;
-        padding-bottom: 10px;
+        align-items: left;
+        justify-content: space-around;
+        padding-top:0 ;
+        height: 70%;
     }
+
+    .contenidoFooter{
+        height: 500px;
+    }
+
     .enlaces{
+        height: 33%;
         width: 100%;
-        height: 100%;
+        margin: 30px;
     }
 
     .copyRight{
-        color: var(--colorContraste);
-        height: 50px;
         width: 100%;
-        font-size: 15px;
-        padding: 0;
-        margin: 0;
     }
 
 }
