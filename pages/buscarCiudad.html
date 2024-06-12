@@ -25,7 +25,7 @@
                 <img src="/assets/logo/logoSinFondo.png" alt="logo">
             </div>
             <div class="visualizacionCarrito">
-                <a href="#">
+                <a href="#" class="iconoCarrito">
                     <i class="bi bi-cart-fill"></i>
                 </a>
             </div>
@@ -49,85 +49,124 @@
          </nav>        
     </header>
     <!-- MAIN -->
-    <!-- BUSCADOR DE RESTAURANTE -->
-    <section>
-        <div class="container-fluid">
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="¿En que ciudad te encuentras?" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">
-                <i class="bi bi-search-heart"></i>
-              </button>
-            </form>
-        </div>
-    </section>
-
-    <!-- CATEGORIAS DE COMIDAS -->
-    <section class="categorias" id="categorias">
-        <h2>¿Algún antojo en especial?</h2>
-        
-    <!-- EL ORDEN DE CLASES PARA LAS PANTALLAS
-      1. pantallas pequeñas
-      2. pantallas medianas
-      3. pantallas grandes -->
-        <div class="row pasosFuncionamiento">
-            <article class=" col-12 col-md-6 col-lg-3 pasos">
-                <div class="ilustracionPasos">
-                    <img src="/assets/imagenes/ilustracion5.svg" alt="iconoAlmuerzo">
-                </div>
-                <h3>Almuerzo</h3>
-                <h3>Cena</h3>
-            </article>
-            <article class=" col-12 col-md-6 col-lg-3 pasos">
-                <div class="ilustracionPasos">
-                    <img src="/assets/imagenes/ilustracion6.svg" alt="iconoEnsalada">      
-                </div>
-                <h3>Ensalada</h3>
-            </article>
-            <article class=" col-12 col-md-6 col-lg-3 pasos">
-                <div class="ilustracionPasos">
-                    <img src="/assets/imagenes/ilustracion7.svg" alt="iconoPostre">
-                </div>
-                <h3>Postres</h3>
-                <h3>Dulces</h3>
-            </article>
-            <article class=" col-12 col-md-6 col-lg-3 pasos">
-                <div class="ilustracionPasos">
-                    <img src="/assets/imagenes/ilustracion8.svg" alt="iconoBebida">
-                </div>
-                <h3>Bebidas</h3>
-            </article>
-        </div>
-    </section>  
-
-    <!-- VISUALIZACION DE RESTAURANTES -->
-     <section class="restaurantes">
-        <div class="opcionRestaurante">
-            <div class="imgOpcion">
-
+    <main>
+        <!-- BUSCADOR DE RESTAURANTE -->
+        <section class="barraBuscar">
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2 barraTexto" type="search" placeholder="¿En que ciudad te encuentras?" aria-label="Search">
+                  <button class="btn btn-outline-success botonBuscar" type="submit">
+                    <i class="bi bi-search-heart"></i>
+                  </button>
+                </form>
             </div>
-            <div class="infoOpcion">
-                <h2>SUNA</h2>
-                <h3>Calle 72 n. 5-09</h3>
-                <p>Aquí no se usan congelados, fritos, grasas trans, colorantes ni azúcares refinados. Endulzan con estevia, panela o miel. Hay opciones vegetarianas, para celíacos y carnívoros.</p>
-                <a href="#">
-                    <button>VER MENU</button>
-                </a>
+        </section>
+    
+        <!-- CATEGORIAS DE COMIDAS -->
+        <section class="categoriasSection" id="categorias">
+            <h2>¿Algún antojo en especial?</h2>
+            
+        <!-- EL ORDEN DE CLASES PARA LAS PANTALLAS
+          1. pantallas pequeñas
+          2. pantallas medianas
+          3. pantallas grandes -->
+            <div class="row categorias">
+                <article class=" col-12 col-md-6 col-lg-3 cajasCategorias">
+                    <a href="#">
+                        <div class="imgCategorias">
+                            <img src="/assets/imagenes/ilustracion5.svg" alt="iconoAlmuerzo">
+                        </div>
+                        <h3>Almuerzo</h3>
+                        <h3>Cena</h3>
+                    </a>
+                </article>
+                <article class=" col-12 col-md-6 col-lg-3 cajasCategorias">
+                    <a href="#">
+                        <div class="imgCategorias">
+                            <img src="/assets/imagenes/ilustracion6.svg" alt="iconoEnsalada">      
+                        </div>
+                        <h3>Ensalada</h3>
+                    </a>
+                </article>
+                <article class=" col-12 col-md-6 col-lg-3 cajasCategorias">
+                    <a href="#">
+                        <div class="imgCategorias">
+                            <img src="/assets/imagenes/ilustracion7.svg" alt="iconoPostre">
+                        </div>
+                        <h3>Postres</h3>
+                        <h3>Dulces</h3>
+                    </a>
+                </article>
+                <article class=" col-12 col-md-6 col-lg-3 cajasCategorias">
+                    <a href="#">
+                        <div class="imgCategorias">
+                            <img src="/assets/imagenes/ilustracion8.svg" alt="iconoBebida">
+                        </div>
+                        <h3>Bebidas</h3>
+                    </a>
+                </article>
             </div>
-        </div>
-        <div class="opcionRestaurante">
-            <div class="imgOpcion">
+        </section>  
+    
+        <!-- VISUALIZACION DE RESTAURANTES -->
+        <section class="restaurantes">
+            <div class="opcionRestaurante">
+                <div class="imgOpcion">
+                    <img src="/assets/imagenesRestaurantes/suna.png" alt="suna">
+                </div>
+                <div class="infoOpcion" id="bogota almuerzo ensalada">
+                    <h2>SUNA</h2>
+                    <h3>Calle 72 n. 5-09</h3>
+                    <p>Aquí no se usan congelados, fritos, grasas trans, colorantes ni azúcares refinados. Endulzan con estevia, panela o miel. Hay opciones vegetarianas, para celíacos y carnívoros.</p>
+                    <a href="#">
+                        <button>VER MENU</button>
+                    </a>
+                </div>
+            </div>
+            <div class="opcionRestaurante">
+                <div class="imgOpcion">
+                    <img src="/assets/imagenesRestaurantes/bruna.png" alt="bruna">
+                </div>
+                <div class="infoOpcion" id="bogota dulce">
+                    <h2>BRUNA</h2>
+                    <h3>Calle 93b n. 13-92</h3>
+                    <p>Este restaurante destaca por usar alimentos naturales y sin procesar, creando recetas con ingredientes de la tierra.</p>
+                    <a href="#">
+                        <button>VER MENU</button>
+                    </a>
+                </div>
+            </div>
 
+            <div class="opcionRestaurante">
+                <div class="imgOpcion">
+                    <img src="/assets/imagenesRestaurantes/braka.png" alt="">
+                </div>
+                <div class="infoOpcion" id="bogota almuerzo ensalada">
+                    <h2>BRAKA PEÑON</h2>
+                    <h3>Calle 16A 121a-332 contiguo a La14 </h3>
+                    <p>Nuestro objetivo es revitalizar los sistemas alimentarios colombianos con alimentos reconfortantes que sean deliciosos, sostenibles y saludables.</p>
+                    <a href="#">
+                        <button>VER MENU</button>
+                    </a>
+                </div>
             </div>
-            <div class="infoOpcion">
-                <h2>BRUNA</h2>
-                <h3>Calle 93b n. 13-92</h3>
-                <p>Este restaurante destaca por usar alimentos naturales y sin procesar, creando recetas con ingredientes de la tierra.</p>
-                <a href="#">
-                    <button>VER MENU</button>
-                </a>
+
+            <div class="opcionRestaurante">
+                <div class="imgOpcion">
+                    <img src="/assets/imagenesRestaurantes/elBuenAlimento.png" alt="">
+                </div>
+                <div class="infoOpcion" id="bogota dulce">
+                    <h2>EL BUEN ALIMENTO</h2>
+                    <h3>Carrera 70 # 13A - 45 Bosques del Limonar</h3>
+                    <p>Somos un restaurante vegetariano con 10 años en el mercado, conocido por la originalidad y el sabor de nuestros platos, demostrando que ser vegetariano es comer sano y delicioso.</p>
+                    <a href="#">
+                        <button>VER MENU</button>
+                    </a>
+                </div>
             </div>
-        </div>
-     </section>
+        </section>
+    </main>
+
     <!-- FOOTER -->
     <footer id="pieDePagina">
         <div class="contenidoFooter">
