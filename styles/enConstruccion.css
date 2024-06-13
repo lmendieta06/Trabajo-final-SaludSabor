@@ -1,36 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-@import url('https://fonts.cdnfonts.com/css/montserrat');
-@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
-
-:root {
-    --colortexto: #18C78F;
-    --colortexto2: #FFC963;
-    --colorcontraste: #57E391;
-    --textTitle: "Ruda", sans-serif;
-    --textContent: 'Montserrat', sans-serif;
-}
-
-body {
-
-    width: 100%;
-
-    overflow-x: hidden;
-}
-
-.modal{
+/* .modal{
     position: fixed;
-    z-index: 101;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     opacity: 0;
-    background-color: #000000d8;
     pointer-events: none;
     transition: opacity .6s .9s;
     --transform: translateY(-100vh);
@@ -64,7 +38,7 @@ border:2px solid #18C78F;
     width: 150px;
 }
 
-.Eres-Increible {
+article {
     width: 45vw;
     height: 10vh;
     background: #daac5632;
@@ -175,4 +149,4 @@ strong {
     border: solid rgba(0, 0, 0, 0.519);
     background: white;
     color: rgba(0, 0, 0, 0.599);
-}
+} */

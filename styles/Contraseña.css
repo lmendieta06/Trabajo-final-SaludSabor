@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
+
+:root {
+    --colortexto: #18C78F;
+    --colortexto2: #FFC963;
+    --colorcontraste: #57E391;
+    --textTitle: "Ruda", sans-serif;
+    --textContent: 'Montserrat', sans-serif;
+}
+
+
+
+
+.modal__contraseña{
+    position: fixed;
+    z-index: 102;
+   top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: var(--textContent);
+    background-color: #000000d8;
+    display: flex;
+     opacity: 0; 
+   pointer-events: none;
+    transition: opacity .4s .9;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+
+
+}
+.modal--mostrar_contraseña{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    ---transition: transform .8s .8s;
+}
+.modal-container {
+border:6px solid rgba(0, 0, 0, 0.529);
+    margin: 0 auto;
+    width: 400px;
+    height: 35vh;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-top: 140px;
+    display: grid;
+    place-items: center;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+
+
+.envia-correo{
+    color: var(--colortexto2);
+    text-indent: px;
+    text-align: center;
+    padding: 20px;
+    background: #1d8f5fe1;
+ 
+ 
+}
+
+.input-mail{
+     width: 200px;
+    margin: auto;
+   
+}
+
+.title-modal{
+    margin-top: 30px;
+}
+
+.Cerrar--modal{
+    font-family: var(--textTitle);
+     font-size: 15px;
+     text-decoration: none;
+    font-weight: bolder;
+     padding:4px 12px;
+     background-color:rgba(0, 0, 0, 0.179);
+     border-radius: 10px;
+     color: white;
+     position: absolute;
+     top:5%;
+     left: 89%;
+ 
+   
+  
+ }
+ .Cerrar--modal:hover{
+     border: solid rgba(0, 0, 0, 0.519);
+     background: white;
+     color: rgba(0, 0, 0, 0.599);
+ }
+ 
+
+
+
+.caja-correo {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    font-family: var(--textContent);
+    font-size: 12px;
+    font-weight: 300;
+    box-shadow: 5px 3px 10px #8d8a8a5f;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+
+
+.boton-contraseña {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 40%;
+    height: 30px;
+    border-radius: 7px;
+    background: var(--colortexto2);
+    border: none;
+    color: #ffffff;
+    margin-bottom: 10px;
+    border-bottom: solid rgb(105, 102, 102);
+}
+
+.boton-contraseña:hover{
+    background-color: #ffffff;
+    border: solid #FFC963;
+    color: var(--colortexto2);
+}
+
+

@@ -56,8 +56,8 @@ header {
 }
 
 .InicioLogo img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     padding: 10px;
     margin-left: 10px;
 
@@ -70,9 +70,14 @@ header {
     margin: 20px 40px;
 }
 
+
+
+
 .ContenedorInicio ul li a span {
-    font-weight: bolder;
-    color: black;
+    margin-right: 25px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.811);
+
 }
 
 .ContenedorInicio ul li img {
@@ -81,8 +86,8 @@ header {
 }
 
 .ContenedorInicio Img {
-    width: 50px;
-    height: 45px;
+    width: 60px;
+    height: 55px;
     margin-left: -5px;
     margin-top: 5px;
 
@@ -91,6 +96,7 @@ header {
 .img-log {
     border-radius: 50px;
 }
+
 /* aca finaliza el encabezado y empieza el menu navegador */
 nav {
     width: 100%;
@@ -144,7 +150,6 @@ h1 {
     position: absolute;
     top: 30%;
     left: 50%;
-
     transform: translate(-50%, -50%);
     font-family: var(--textTitle);
     font-size: 93px;
@@ -212,11 +217,13 @@ h2 {
     font-size: 36px;
     font-family: var(--textContent);
 }
-.vision p span{
+
+.vision p span {
     color: var(--colortexto);
     font-weight: bold;
 }
-strong{
+
+strong {
     color: var(--colortexto2);
 }
 
@@ -238,18 +245,23 @@ strong{
     margin-bottom: 100px;
 
 
+
 }
+
+
 
 .equipo img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    border: solid 6px rgb(36, 226, 112);
-    background: linear-gradient(90deg,green, white);
+    border: solid 6px rgba(81, 90, 85, 0.812);
+
 
 }
 
-h4 {
+
+
+.Our-names {
     font-family: var(--textContent);
     font-size: 20px;
     color: var(--colorcontraste);
@@ -284,8 +296,8 @@ h4 {
 
 /* foooooter */
 footer {
-   
-    background-color:var(--colortexto);
+
+    background-color: var(--colortexto);
     width: 100%;
     height: 250px;
     color: white;
@@ -299,17 +311,19 @@ footer {
     text-align: left;
     text-decoration-line: underline;
 }
-.htres{
+
+.htres {
     font-size: 15px;
 }
+
 footer p {
-    
+
 
     font-family: var(--textTitle);
 }
 
 .contenidoFooter {
-  
+
     height: 230px;
     padding-left: 5%;
     padding-right: 5%;
@@ -327,12 +341,12 @@ footer p {
     height: 40px;
     margin-top: 30px;
     text-align: left;
-  
+
 
 }
 
 .redes {
-    
+
     display: flex;
     margin-top: 5%;
     margin-right: 50px;
@@ -350,186 +364,16 @@ footer p {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    
+
 
 }
 
 .infoFooter a {
-    
-    color:  white;
+
+    color: white;
     text-decoration: none;
     font-family: var(--tipografiaTexto);
-    
-}
-/* estilos del MODAL */
-.modal {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .6s .9s;
-    --transform: translateY(-100vh);
-    --transition: transform .8s;
 
-
-}
-.modal--mostrar{
-    opacity: 1;
-    pointer-events: unset;
-    transition: opacity .6s;
-    --transform: translateY(0);
-    ---transition: transform .8s .8s;
-}
-.modal-contenedor {
-
-    margin: 0 auto;
-    width: 800px;
-    height: 90vh;
-    background-color: #ffffff;
-    border-radius: 15px;
-    padding-bottom: 50px;
-    margin-top: 50px;
-    display: grid;
-    gap: 15px;
-    place-items: center;
-    transform: var(--transform);
-    transition: var(--transition);
-}
-
-.modal img {
-    margin-top: -10px;
-    width: 300px;
-}
-
-article {
-    width: 38vw;
-    background: #daac5632;
-    font-family: var(--textTitle);
-   
-}
-
-
-h4 {
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    color:var(--colorcontraste);
-    font-family: var(--textContent);
-
-
-}
-
-.modal-titulo {
-    font-size: 45px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-    color:var(--colorcontraste);
-
-
-}
-
-
-.input-login {
-    width: 550px;
-    height: 250px;
-    background-color: #ffffff;
-    margin: auto;
-    padding: 20px 30px;
-font-family: var(--textContent);
-}
-
-.controles {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 15px;
-    padding: 15px 10px;
-    font-family: var(--textContent);
-    font-size: 14px;
-    font-weight: bold;
-    box-shadow: 7px 5px 5px #8a8686;
-}
-
-
-
-
-.botones {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: 30%;
-    height: 40px;
-    border-radius: 7px;
-    background: var(--colortexto2);
-    border: none;
-    color: #ffffff;
-    margin-bottom: 16px;
-}
-.botones:hover{
-    background-color: #ffffff;
-    border: solid #FFC963;
-    color: var(--colortexto2);
-}
-
-.input-login p {
-    height: 40px;
-    text-align: center;
-    color: var(--colortexto)
-}
-
-strong {
-    font-weight: bolder;
-}
-
-.input-login a {
-    color: var(--colortexto);
-    text-decoration: none;
-    font-size: 14px;
-    font-family: var(--textContent);
-
-}
-
-.input-login a span {
-    color: var(--colortexto2);
-    font-weight: bolder;
-    font-family: var(--textContent);
-    transition: transform .2s;
-}
-
-.input-login a span:hover {
-  color:rgb(14, 14, 12);
-  
-
-}
-
-.Cerrar-modal{
-   font-family: var(--textTitle);
-    font-size: 35px;
-    text-decoration: none;
-   font-weight: bolder;
-    padding:4px 15px;
-    background-color:rgba(0, 0, 0, 0.179);
-    border-radius: 15px;
-    color: white;
-    position: absolute;
-    top:3%;
-    left:91%
-}
-.Cerrar-modal:hover{
-    border: solid black;
-    background: white;
-    color: black;
 }
 
 
@@ -546,29 +390,98 @@ strong {
             */
         width: 230vw;
         margin: 0 auto;
-    
+
     }
-main {
-    width: 230vw;
-}
+
+    main {
+        width: 230vw;
+    }
 
 
-.vision img,
-.mision img{
-    width: 150px;
-    height:150px;
-}
-.vision p,
-.mision p{
-    font-size: 30px;
+    .vision img,
+    .mision img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .vision p,
+    .mision p {
+        font-size: 30px;
+    }
+
+    .equipo img {
+        width: 180px;
+        height: 180px;
+    }
+
+    footer {
+        width: 230vw;
+    }
+
+    .modal-contenedor {
+        width: 510px;
+        height: 60vh;
+    }
+
+    .Eres-Increible {
+        width: 100%;
+        height: 65px;
+        font-size: 20px;
+
+    }
+
+    .controles {
+        width: 40%;
+        padding: 4px 8px;
+    }
 }
 
-.equipo img{
-    width: 180px;
-    height: 180px;
-}
-footer{
-    width: 230vw;
-}
+@media (max-width:1024px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        /* ancho */
+        /* vw -> ancho de pantalla
+                vh -> alto de pantalla
+            */
+        width: 100vw;
+        margin: 0 auto;
+
+    }
+
+
+    main {
+        width: 100vw;
+    }
+
+    .baner {
+
+        width: 80vh;
+        height: 80vh;
+    }
+
+    .modal-contenedor {
+        width: 520px;
+        height: 40vh;
+    }
+
+    .Eres-Increible {
+        width: 100%;
+        height: 65px;
+        font-size: 20px;
+
+    }
+
+    .controles {
+        width: 40%;
+        padding: 4px 8px;
+    }
+
+
+
+
 
 }

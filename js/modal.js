@@ -1,6 +1,6 @@
 const openModal = document.querySelector(`.boton-clave`);
 const modal = document.querySelector(`.modal`);
-const closeModal = document.querySelector(`.Cerrar-modal`)
+const closeModal = document.querySelector(`.Cerrar-modal`);
 
 openModal.addEventListener(`click`, (e)=>{
     e.preventDefault();
