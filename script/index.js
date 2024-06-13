@@ -27,3 +27,19 @@ closeModalConstrucction.addEventListener("click", (e)=>{
     // Agrega la funcion modal--show definida en el css
     modalConstruction.classList.remove("modalConstruccion--show");
 })
+
+// LOGICA MODAL INICIAR SESION
+const openModal = document.querySelector(".boton-clave");
+const modal = document.querySelector(".modalInicioSesion");
+const closeModal = document.querySelector(".Cerrar-modal");
+
+openModal.addEventListener("click", (e)=>{
+    e.preventDefault();
+    modal.classList.add("modal--mostrar");
+
+});
+closeModal.addEventListener("click", (e)=>{
+    e.preventDefault();
+    modal.classList.remove("modal--mostrar");
+
+});

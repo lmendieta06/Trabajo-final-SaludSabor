@@ -87,6 +87,8 @@ header{
 }
 
 .inicioSesionUser{
+    /* Sombra de la caja */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     background-color: var(--colorContraste);
     width: 30px;
     height: 30px;
@@ -126,6 +128,168 @@ header{
     text-decoration: none;
     font-family: var(--tipografiaTitulos);
 }
+
+/* MODAL INICIAR SESION */
+.modalInicioSesion{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+    z-index: 100;
+    background-color: rgba(128, 128, 128, 0.262);
+
+
+}
+.modal--mostrar{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    ---transition: transform .8s .8s;
+}
+.modal-contenedorInicioSesion {
+    border:2px solid #18C78F;
+    margin: 0 auto;
+    width: 50%;
+    height: 76vh;
+    background-color: #fffcfc;
+    border-radius: 15px;
+    margin-top: 140px;
+    display: grid;
+    place-items: center;
+    transform: var(--transform);
+    transition: var(--transition);
+    
+}
+
+.modalInicioSesion img {
+    margin-top: 2px;
+    width: 150px;
+}
+
+.modalInicioSesion article {
+    width: 100%;
+    height: 10vh;
+    background: #daac5632;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--tipografiaTitulos);
+   
+}
+.modal-titulo {
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    color:var(--colorContraste);
+
+
+}
+
+
+.input-login {
+    width: 90%;
+   margin: auto;
+   font-family: var(--tipografiaTexto);
+   
+}
+
+.controles {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    padding: 12px 8px;
+    font-family: var(--tipografiaTexto);
+    font-size: 12px;
+    font-weight: 300;
+    box-shadow: 6px 5px 5px #d7d1d1;
+    outline: none;
+}
+
+
+
+
+.botonesInicioSesion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 30%;
+    height: 40px;
+    border-radius: 7px;
+    background: var(--colorContraste2);
+    border: none;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+.botonesInicioSesion:hover{
+    background-color: #ffffff;
+    border: solid #FFC963;
+    color: var(--colorContraste);
+}
+
+.input-login p {
+    height: 40px;
+    text-align: center;
+    color: var(--colorContraste);
+}
+
+.modalInicioSesion strong {
+    font-weight: bolder;
+}
+
+.input-login a {
+    color: var(--colortexto);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: var(--tipografiaTexto);
+
+}
+
+.input-login a span {
+    color: var(--colortexto2);
+    font-weight: bolder;
+    font-family: var(--tipografiaTexto);
+    transition: transform .2s;
+}
+
+.input-login a span:hover {
+  color:rgb(14, 14, 12);
+  
+
+}
+
+.Cerrar-modal{
+   font-family: var(--tipografiaTitulos);
+    font-size: 20px;
+    text-decoration: none;
+   font-weight: bolder;
+    padding:4px 12px;
+    background-color:rgba(0, 0, 0, 0.179);
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    top:3%;
+    left:91%
+}
+.Cerrar-modal:hover{
+    border: solid rgba(0, 0, 0, 0.519);
+    background: white;
+    color: rgba(0, 0, 0, 0.599);
+}
+
 
 /* MAIN */
 main{
@@ -198,6 +362,8 @@ h1, h2, h3{
     margin-right: 30px;
     border: none;
     border-radius: 10px;
+    /* Sombra de la caja */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 /* IMAGEN PRESENTACION */
 .imgInicio{
@@ -215,6 +381,7 @@ h1, h2, h3{
     width: 100%;
     padding: 20px;
     text-align: center;
+    background-color: none;
 }
 
 .funcionamiento h2{
@@ -239,6 +406,7 @@ h1, h2, h3{
     /* margin-left: 90px;
     margin-right: 90px; */
     /* gap: 10%; */
+    background-color: transparent;
 }
 
 /* Div que contiene la imagen */
@@ -261,6 +429,7 @@ h1, h2, h3{
     align-items: center;
     font-size: 15px;
     gap: 10px;
+    background-color: transparent;
 }
 
 .ilustracionPasos img{
@@ -457,6 +626,10 @@ footer h2{
 /* Estilos para pantallas medianas - pequeñas */
 @media screen and (max-width:1100px){
 
+    .modal-contenedorInicioSesion{
+        width: 90%;
+    }
+    
     .descripcionPresentacion p{
         font-family: var(--tipografiaTexto);
         font-size: 15px;
@@ -497,6 +670,10 @@ footer h2{
 
     .inicioSesionOpcion{
         width: 40%;
+    }
+
+    .modal-contenedorInicioSesion{
+        width: 90%;
     }
 
     .descripcionPresentacion{
@@ -542,6 +719,9 @@ footer h2{
 
 @media screen and (max-width:650px){
 
+    .modal-contenedorInicioSesion{
+        width: 90%;
+    }
     .listaMenu a{
         color: var(--colorFondo);
         text-decoration: none;

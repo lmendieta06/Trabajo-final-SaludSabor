@@ -1,0 +1,212 @@
+/* Importaciones */
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+/*font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.cdnfonts.com/css/ruda');
+/* font-family: 'Ruda', sans-serif; */
+
+/* Variables - Pseudoclase */
+:root{
+    /* TIPOGRAFIAS */
+    --tipografiaTexto:'Montserrat', sans-serif;
+    --tipografiaTitulos: 'Ruda', sans-serif;
+    /* PALETA DE COLORES */
+    --colorFondo: white;
+    --colorNav: #FFC963;
+    --colorContraste: #18C78F;
+    --colorContraste2: #57E391;
+    --colorFiguras: #FFE1A9;
+
+}
+
+/* Ajuste de margin y padding */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Inicio de body */
+body{
+    /* border: 5px solid violet; */
+    background-color: var(--colorFondo);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100%;
+    background-image: url(/assets/imagenes/fondoRegistro.png);
+    background-size: cover;
+}
+
+/* MAIN */
+main{
+    width: 100%;
+    height: 95%;
+    background-image: url(/assets/imagenes/fondoRegistro.png);
+}
+
+.modalRegistro{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(128, 128, 128, 0.368);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0; */
+    /* Para poder interactuar con la pagina */
+    /* pointer-events: none; */
+    transition: opacity .6s;
+}
+
+.containerModal{
+    width: 70%;
+    height: 85%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.containerEncabezado{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.encabezado{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgEncabezado{
+    width: 100%;
+    height: 0%;
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+}
+.imgEncabezado img{
+    width: 15%;
+    height: 100%;
+    padding-top: 0;
+}
+
+.encabezado h2{
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--tipografiaTitulos);
+    font-weight: 900;
+    color: var(--colorContraste);
+}
+.formsSingUp{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.formsSingUp form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.controles{
+    width: 100%;
+    height: 40px;
+    border: .5px solid var(--colorContraste);
+    padding: 5px;
+    border-radius: 5px;
+    font-family: var(--tipografiaTexto);
+}
+
+.botonEnviarRegistro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 60%;
+    height: 40px;
+    border-radius: 7px;
+    background: var(--colorNav);
+    border: none;
+    color: #ffffff;
+    margin-top: 16px;
+    font-family: var(--tipografiaTexto);
+    font-weight: 700;
+    /* Sombra de la caja */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.botonEnviarRegistro:hover{
+    background-color: var(--colorFiguras);
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--colorContraste);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyRight{
+    width: 100%;
+    height: 100%;
+    font-family: var(--tipografiaTitulos);
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px ;
+
+}
+
+/* Pantallas medianas */
+@media screen and (max-width:1000px){
+    .containerModal{
+        width: 80%;
+        height: 70%;
+    }
+
+    .formsSingUp form{
+        width: 80%;
+    }
+}
+
+/* Pantallas pequeñas */
+@media screen and (max-width:600px){
+    .containerModal{
+        width: 90%;
+    }
+
+    .formsSingUp form{
+        width: 100%;
+    }
+}

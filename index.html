@@ -29,9 +29,9 @@
                     <img src="./assets/logo/logoSinFondo.png" alt="logo">
                 </a>
             </div>
-            <div class="inicioSesionOpcion">
+            <div class="inicioSesionOpcion boton-clave">
                 <p>
-                    ¿Ya tienes cuenta?<a href=""> Inicia sesión</a>
+                    ¿Ya tienes cuenta?<a href="" class="boton-clave"> Inicia sesión</a>
                 </p>
                 <div class="inicioSesionUser">
                     <a href="#">
@@ -60,6 +60,29 @@
                 </li>
             </ul>
          </nav>
+
+        <!-- MODAL INICIAR SESION -->
+        <section class="modalInicioSesion ">
+            <div class="modal-contenedorInicioSesion">
+               <a class="Cerrar-modal" href="#">x</a>
+                <img src="./assets/logo/logoSinFondo.png" alt="logo-saborysalud"
+                    class="Log-ss">
+                <article class="Eres-Increible">
+                    <h2 class="modal-titulo">¡ERES INCREIBLE! <br> Bienvenido</h2>
+                    
+                </article>
+    
+                <div class="input-login">
+                    <input class="controles" type="email" name="Multiple" value="" placeholder="email">
+                    <input class="controles" type="password" name="Contraseña" value="" placeholder="Contraseña">
+                    <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+                    <input class="botonesInicioSesion" type="submit" name="" value="Entrar">
+                    <p>¿No tienes cuenta?<a href="#"><span> Crear cuenta</span></a></p>
+                    <p>Al crear una cuenta, aceptas nuestros <strong>términos y condiciones</strong></p>
+                </div>
+            </div>
+        </section>
+        <script src="./js/modal.js"></script>
     </header>
     <!-- MAIN -->
     <main>
