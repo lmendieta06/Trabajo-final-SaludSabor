@@ -1,0 +1,603 @@
+/* Importaciones */
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+/*font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.cdnfonts.com/css/ruda');
+/* font-family: 'Ruda', sans-serif; */
+
+/* Variables - Pseudoclase */
+:root{
+    /* TIPOGRAFIAS */
+    --tipografiaTexto:'Montserrat', sans-serif;
+    --tipografiaTitulos: 'Ruda', sans-serif;
+    /* PALETA DE COLORES */
+    --colorFondo: white;
+    --colorNav: #FFC963;
+    --colorContraste: #18C78F;
+    --colorContraste2: #57E391;
+    --colorFiguras: #FFE1A9;
+
+}
+
+/* Ajuste de margin y padding */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Inicio de body */
+body{
+    /* border: 5px solid violet; */
+    background-color: var(--colorFondo);
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100%;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 130px;
+    margin-bottom: 0;
+
+}
+
+/* Dar estilos a logo y a inicio de sesion */
+.barraLogo{
+    background-color: var(--colorFondo);
+    width: 100%;
+    height: 100px;
+    /* Hacer que siempre se fije */
+    position: fixed;
+    z-index:100;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--tipografiaTitulos);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*  ESTILOS LOGO  */
+.logo{
+    width: 80%;
+}
+.barraLogo img{
+    margin-left: 30px;
+    width: 120px;
+
+
+}
+
+/* ESTILOS ICONO */
+.visualizacionCarrito{
+    width: 30px;
+    height: 30px;
+}
+
+.iconoCarrito{
+    color:var(--colorContraste);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* NAVEGADOR */
+
+.menuNav{
+
+    background-color: var(--colorNav);
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    z-index:100;
+    top: 100px;
+    left:0;
+}
+
+.listaMenu{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 5%;
+    list-style: none;
+}
+
+.listaMenu a{
+
+    color: var(--colorFondo);
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--tipografiaTitulos);
+    width: 33%;
+}
+
+/* MAIN */
+
+main{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* BARRA PARA BUSCAR CIUDAD */
+.barraBuscar{
+    color:var(--colorContraste);
+    width: 50%;
+    height: 70px;
+    margin: 30px;
+}
+
+.barraTexto{
+    color: var(--colorContraste);
+}
+
+/* CATEGORIAS */
+
+.categoriasSection{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.categoriasSection h2{
+    color:var(--colorContraste2);
+    font-family: var(--tipografiaTitulos);
+    font-weight: 900;
+    text-align: center;
+
+}
+
+.categorias{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* gap: 5px; */
+}
+
+.cajasCategorias{
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cajasCategorias a{
+    /* border:2px solid rgba(0, 0, 0, 0.058); */
+    text-decoration: none;
+    color: black;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    /* Sombra de la caja */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.cajasCategorias a:active{
+    border: 2px solid var(--colorContraste);
+}
+
+.imgCategorias{
+    /* border: 2px solid blue; */
+    margin-bottom: 10px;
+}
+.cajasCategorias h3{
+    font-size: 20px;
+    font-weight: 700;
+    margin:0;
+}
+
+/* VISUALIZACION DE RESTAURANTES */
+
+.restaurantes{
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* CAJAS POR CIUDAD */
+.restaurantesCaja{
+   width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* CAJAS POR RESTAURANTE */
+.opcionRestaurante{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.imgOpcion, .infoOpcion{
+    width: 50%;
+}
+
+.imgOpcion{
+    padding: 15px;
+}
+
+.restaurantes img{
+    width: 80%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.infoOpcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoOpcion h2{
+    font-family: var(--tipografiaTitulos);
+    color: var(--colorContraste2);
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+}
+
+.infoOpcion h3{
+    font-family: var(--tipografiaTexto);
+    color: var(--colorContraste);
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+.infoOpcion p{
+    font-family: var(--tipografiaTexto);
+    text-align: center;
+    padding: 30px;
+    font-weight: 500;
+}
+
+.infoOpcion a{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 40px;
+}
+
+.infoOpcion a:hover{
+    width: 75%;
+    height: 50px;
+}
+.infoOpcion button{
+    width: 100%;
+    height: 100%;
+    font-family: var(--tipografiaTexto);
+    background-color: var(--colorContraste);
+    color: white;
+    font-weight: 800;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+/* ESTILOS MENSAJE NO EXISTE */
+
+.alertDontExist{
+    color: var(--colorContraste);
+    font-family: var(--tipografiaTexto);
+    font-size: 100px;
+    text-align: center;
+    font-weight: 2000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 30px;
+}
+
+.imgError img{
+    width: 150px;
+}
+
+
+/* ESTILOS DEL CHATBOT */
+
+.chatBot{
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    color: var(--colorFondo);
+    width: 50px;
+    height: 50px;
+    background-color: var(--colorContraste2);
+    border-radius: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatBot i{
+    
+    color:white;
+    text-decoration: none;
+}
+
+/* ESTILOS DE MODALES */
+
+/* MODAL DE CONSTRUCCION */
+
+.modalConstruccion{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(128, 128, 128, 0.368);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* Para poder interactuar con la pagina */
+    pointer-events: none;
+    transition: opacity .6s;
+}
+
+.modalConstruccion--show{
+    opacity: 1;
+    pointer-events: unset;
+    /* Transicion para hacer mas amable la aparicion */
+    transition: opacity .6s;
+}
+.contenedorModalConstruccion{
+    width: 90%;
+    max-width: 500px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorFondo);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contenedorModalConstruccion img{
+    width: 150px;
+}
+
+.contenedorModalConstruccion h2{
+    font-family: var(--tipografiaTexto);
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contenedorModalConstruccion a{
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--colorNav);
+    font-family: var(--tipografiaTexto);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.contenedorModalConstruccion a:hover{
+    background-color: var(--colorFiguras);
+}
+/* FOOTER */
+footer{
+    background-color: var(--colorContraste);
+    width: 100vw;
+    height: auto;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.contenidoFooter{
+    width: 100%;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+/* Contiene todas las clases enlace */
+.enlacesFooter{
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid blue; */
+    width: 80%;
+}
+
+.enlaces{
+    width: 26%;
+    height: 40px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.redes{
+    display: flex;
+    margin-top: 5%;
+    gap: 5%;
+}
+
+.redes a, .redes p{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-family: var(--tipografiaTexto);
+}
+
+/* Padre directo de las a */
+.infoFooter{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+
+}
+
+.infoFooter a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--tipografiaTexto);
+}
+
+/* Logo */
+.imgFooter{
+    width: 200px;
+    height: 200px;
+}
+
+.imgFooter img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Copyright */
+
+.copyRight{
+    margin:20px;
+    font-family: var(--tipografiaTitulos);
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+}
+
+/* ESTILOS PARA PANTALLAS MEDIANAS */
+@media screen and (max-width:1200px){
+
+    .barraBuscar{
+        color:var(--colorContraste);
+        width: 70%;
+        height: 70px;
+        margin: 30px;
+    }
+
+    .cajasCategorias a{
+        width: 90%;
+    }
+
+    .restaurantes img{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+}
+
+/* ESTILOS PARA PANTALLAS MEDIANAS - PEQUEÑAS */
+@media screen and (max-width:900px){
+
+    main{
+        height: auto;
+    }
+
+    .barraBuscar{
+        width: 80%;
+    }
+
+    .categoriasSection{
+        width: 100%;
+    }
+    .categorias{
+        width: 100%;
+    }
+    .cajasCategorias{
+        margin-bottom: 10px;
+    }
+    .opcionRestaurante{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px; 
+    }
+
+    .infoOpcion{
+        width: 100%;
+    }
+
+    .imgOpcion{
+        width: 90%;
+        height: 50%;
+    }
+
+    .imgOpcion img{
+        width: 100%;
+    }
+
+
+    .enlacesFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: space-around;
+        padding-top:0 ;
+        height: 70%;
+    }
+
+    .contenidoFooter{
+        height: 500px;
+    }
+
+    .enlaces{
+        height: 33%;
+        width: 100%;
+        margin: 30px;
+    }
+
+}
+
+@media screen  and (max-width:400px){
+    .listaMenu a{
+        font-size: 15px;
+    }
+}
+
