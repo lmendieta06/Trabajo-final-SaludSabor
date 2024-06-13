@@ -30,9 +30,11 @@ closeModalConstrucction.addEventListener("click", (e)=>{
 // FUNCIONAMIENTO DE LOS FILTROS
 document.addEventListener("DOMContentLoaded", () => {
     const searchForm = document.getElementById("searchForm");
+    // CIUDAD A BUSCAR
     const searchInput = document.getElementById("searchInput");
-    let selectedCategory = 'all'; // Inicialmente sin filtro de categoría
+    let selectedCategory = 'all'; // INICIAR SIN FILTRO
 
+    // ARREGLO DE RESTAURANTES
     const restaurantes = [
         { nombre: ' SUNA', ciudad: 'bogota', categorias: ['ensalada', 'cena'], imagen: '/assets/imagenesRestaurantes/suna.png', direccion: 'Calle 72 n. 5-09', descripcion: 'Aquí no se usan congelados, fritos, grasas trans, colorantes ni azúcares refinados. Endulzan con estevia, panela o miel. Hay opciones vegetarianas, para celíacos y carnívoros.' },
         { nombre: 'BRUNA', ciudad: 'bogota', categorias: ['almuerzo', 'cena'], imagen: '/assets/imagenesRestaurantes/bruna.png', direccion: 'Calle 93b n. 13-92', descripcion: 'Este restaurante destaca por usar alimentos naturales y sin procesar, creando recetas con ingredientes de la tierra.' },
@@ -44,15 +46,19 @@ document.addEventListener("DOMContentLoaded", () => {
     // Función para filtrar y mostrar resultados
     function filtrarYMostrar() {
         const searchText = searchInput.value.toLowerCase();
+        // SECCION DONDE SE PONDRAN LOS RESTAURANTES
         const contenedor = document.querySelector(".restaurantes");
+        // HACER QUE SE "LIMPIE" EL CONTENEDOR AL MODIFICAR LA BUSQUEDA
         contenedor.innerHTML = '';
 
         const resultadosFiltrados = restaurantes.filter(restaurante => {
+            // VERIFICAR QUE EL ELEMENTOS DE LOS RESTAURANTES SEAN IGUALES A LA BUSQUEDA
             const matchCiudad = restaurante.ciudad.toLowerCase().includes(searchText);
             const matchCategoria = selectedCategory === 'all' || restaurante.categorias.includes(selectedCategory);
             return matchCiudad && matchCategoria;
         });
 
+        // QUE HACER SI NO EXISTE
         if (resultadosFiltrados.length === 0) {
             contenedor.innerHTML =  `
 
@@ -67,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         `;;
         } else {
+            // SI EXISTE COMO DEBE AGREGARSE AL HTML
             resultadosFiltrados.forEach(restaurante => {
                 const restauranteHTML = `
                     <div class="opcionRestaurante">
@@ -88,22 +95,23 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Filtrar por ciudad al enviar el formulario
+    // BUSQUEDA DE LA CIUDAD
     searchForm.addEventListener("submit", (e) => {
         e.preventDefault();
         filtrarYMostrar();
     });
 
-    // Filtrar por categoría al hacer clic en una categoría
+    // FILTRAR POR CATEGORIA
     const categorias = document.querySelectorAll(".categoria");
     categorias.forEach(categoria => {
         categoria.addEventListener("click", (e) => {
             e.preventDefault();
+            // TOMA LA CATEGORIA ASIGNADA AL BOTON EN EL HTML
             selectedCategory = categoria.getAttribute("data-category").toLowerCase();
             filtrarYMostrar();
         });
     });
 
-    // Mostrar todos los restaurantes al cargar la página
+    // MOSTRAR TODO ANTES DE AÑADIR FILTROS
     filtrarYMostrar();
 });
