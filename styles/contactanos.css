@@ -1,0 +1,240 @@
+body{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+
+.encabezado {
+    width: 100%;
+    height: 185px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 0 rgba(20, 20, 20, 0.3);
+    margin-bottom: 3px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textInicia{
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    font-family: "Ruda", sans-serif;
+}
+
+.logo{
+    height: 170px;
+    width: 170px;
+}
+
+#inicia{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.logoInicio{
+    width: 74px;
+    height: 68px;
+    margin-right: 50px;
+    border-radius: 10px;
+    box-shadow: 5px;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #FFC963;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.textNav{
+    height: 50px;
+    align-content: center;
+    font-family: "Ruda", sans-serif;
+}
+
+p{
+    font-family: "Ruda", sans-serif;
+}
+
+h3{
+    margin: 0px;
+    font-size: 32px;
+    font-family: "Ruda", sans-serif;
+    color: #ffffff;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 3px;
+}
+
+#textoMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textoMain{
+    width: 60%;
+    font-size: 36px;
+    text-align: center;
+}
+
+.imgMain{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.canalAtencion{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 64px;
+    color: #18C78F;
+    font-family: "Ruda", sans-serif;
+}
+
+.canales{
+    width: 100%;
+    height: 72px;
+    background-color: #57E391;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+}
+
+.preguntasFrecuentes{
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+}
+
+.textoPreguntas{
+    width: 80%;
+    font-size: 36px;
+}
+
+.preguntas{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.brocoli{
+    display: flex;
+    justify-content: left;
+}
+
+.piePag{
+    width: 100%;
+    height: 292px;
+    background-color: #18C78F;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.piePagInt{
+    width: 100%;
+    height: 222px;
+    background-color: #18C78F;
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr 2fr;
+    grid-auto-rows: 1fr;
+    margin: 0px;
+}
+
+.infoContacto{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+.divInfo{
+    width: auto;
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.iconFooter{
+    width: 30px;
+    height: 30px;
+}
+
+.textInfo{
+    font-family: "Ruda", sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    margin-top: 0px;
+}
+
+.terminos.navega{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulosFooter{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.textTN{
+    font-family: "Ruda", sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+.logoFooter{
+    width: 200px;
+    height: 200px;
+}
+
+.autor{
+    width: 100%;
+    height: 70px;
+    border-top: 2px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+.textAutor{
+    font-family: "Ruda", sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+}
