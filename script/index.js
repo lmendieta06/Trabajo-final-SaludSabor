@@ -29,7 +29,7 @@ closeModalConstrucction.addEventListener("click", (e)=>{
 })
 
 // LOGICA MODAL INICIAR SESION
-const openModal = document.querySelector(".boton-clave");
+const openModal = document.getElementsByClassName(".boton-clave");
 const modal = document.querySelector(".modalInicioSesion");
 const closeModal = document.querySelector(".Cerrar-modal");
 
