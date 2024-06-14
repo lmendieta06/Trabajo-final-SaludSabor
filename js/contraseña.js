@@ -13,3 +13,6 @@ closeModalc.addEventListener(`click`, (e)=>{
     modalc.classList.remove(`modal--mostrar_contraseña`);
 
 });
+
+
+      
