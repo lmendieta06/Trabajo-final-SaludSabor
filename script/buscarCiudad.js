@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             <h2>${restaurante.nombre}</h2>
                             <h3>${restaurante.direccion}</h3>
                             <p>${restaurante.descripcion}</p>
-                            <a href="/menu.html" class="enProceso">
+                            <a href="/Menu.html" class="enProceso">
                                 <button >VER MENU</button>
                             </a>
                         </div>

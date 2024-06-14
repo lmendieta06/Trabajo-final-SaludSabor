@@ -1,6 +1,6 @@
 // ABRIR EL MODAL DE CONSTRUCCION
 // Almacenar la clase relacionada con el boton el en HTML
-const openModalConstruction = document.querySelector(".recetas");
+const openModalConstruction = document.getElementsByClassName("recetas");
 
 
 // Para que el modal aparezca lo guardo en otra variable
