@@ -1,0 +1,510 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
+
+:root {
+    --colortexto: #18C78F;
+    --colortexto2: #FFC963;
+    --colorcontraste: #57E391;
+    --textTitle: "Ruda", sans-serif;
+    --textContent: 'Montserrat', sans-serif;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+
+body {
+    /* Ancho del tamaño de mi pantalla */
+    width: 100%;
+
+
+}
+
+header {
+    /* ancho */
+    /* vw -> ancho de pantalla
+            vh -> alto de pantalla
+        */
+    width: 100vw;
+    margin: 0 auto;
+
+}
+
+.InicioLogo {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+
+}
+
+.InicioLogo img {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    margin-left: 10px;
+
+}
+
+.ContenedorInicio ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 40px;
+}
+
+
+
+
+.ContenedorInicio ul li a span {
+    margin-right: 25px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.811);
+
+}
+
+.ContenedorInicio ul li img {
+
+    border-radius: 15px;
+}
+
+.ContenedorInicio Img {
+    width: 60px;
+    height: 55px;
+    margin-left: -5px;
+    margin-top: 5px;
+
+}
+
+.img-log {
+    border-radius: 50px;
+}
+
+/* aca finaliza el encabezado y empieza el menu navegador */
+nav {
+    width: 100%;
+    height: 30px;
+    background-color: #FFC963;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    list-style: none;
+    position: fixed;
+    z-index: 100;
+    top: 100px;
+    left: 0;
+}
+
+
+h3 {
+    margin: 0px;
+    font-size: 17px;
+    font-family: "Ruda", sans-serif;
+    color: #ffffff;
+
+}
+
+
+.baner {
+
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+
+}
+
+/* mi imagen ocupa todo el espacio de su padre */
+.baner img {
+    width: 100%;
+    height: 100%;
+    /* manipular la img */
+    object-fit: cover;
+    filter: brightness(0.7);
+    /* Reducir el brillo al 80% */
+
+}
+
+
+h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--textTitle);
+    font-size: 93px;
+    font-weight: bolder;
+    color: white;
+
+
+}
+
+.parrafo-banner {
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+
+    line-height: 50px;
+    font-family: var(--textContent);
+    font-weight: bold;
+    color: white;
+    text-align: center;
+
+}
+
+main {
+    margin-top: 80px;
+}
+
+h2 {
+    font-size: 48px;
+    text-align: center;
+    color: var(--colortexto);
+    font-family: var(--textTitle);
+    margin-bottom: 100px;
+}
+
+.mision {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.mision p {
+    width: 470px;
+    height: 314px;
+    text-align: center;
+    font-size: 36px;
+    font-family: var(--textContent);
+
+}
+
+.vision {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+
+.vision p {
+    width: 470px;
+    height: 314px;
+    text-align: center;
+    font-size: 36px;
+    font-family: var(--textContent);
+}
+
+.vision p span {
+    color: var(--colortexto);
+    font-weight: bold;
+}
+
+strong {
+    color: var(--colortexto2);
+}
+
+.mision img {
+    width: 150px;
+    height: 150px;
+}
+
+.vision img {
+    width: 150px;
+    height: 150px;
+}
+
+.equipo {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+
+
+
+}
+
+
+
+.equipo img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: solid 6px rgba(81, 90, 85, 0.812);
+
+
+}
+
+
+
+.Our-names {
+    font-family: var(--textContent);
+    font-size: 20px;
+    color: var(--colorcontraste);
+    text-decoration-line: overline;
+
+}
+
+
+
+.gabriel h4 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border: sol;
+}
+
+.laura h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.leonhard h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+/* ESTILOS DEL CHATBOT */
+
+.chatBot{
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    background-color: var(--colorcontraste);
+    border-radius: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatBot i{
+    
+    color:white;
+    text-decoration: none;
+}
+
+
+/* foooooter */
+footer {
+
+    background-color: var(--colortexto);
+    width: 100%;
+    height: 250px;
+    color: white;
+    text-align: center;
+}
+
+.hdos {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+    text-decoration-line: underline;
+}
+
+.htres {
+    font-size: 15px;
+}
+
+footer p {
+
+
+    font-family: var(--textTitle);
+}
+
+.contenidoFooter {
+
+    height: 230px;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenidoFooter img {
+    width: 230px;
+    height: 230px;
+}
+
+.enlaces {
+    width: 20%;
+    height: 40px;
+    margin-top: 30px;
+    text-align: left;
+
+
+}
+
+.redes {
+
+    display: flex;
+    margin-top: 5%;
+    margin-right: 50px;
+    gap: 5%;
+
+}
+
+.redes a {
+    text-decoration: none;
+    color: white;
+}
+
+.infoFooter {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+
+}
+
+.infoFooter a {
+
+    color: white;
+    text-decoration: none;
+    font-family: var(--tipografiaTexto);
+
+
+}
+
+
+/* aqui emmpieza el responsive para dispositivos moviles */
+@media (max-width:490px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        /* ancho */
+        /* vw -> ancho de pantalla
+                vh -> alto de pantalla
+            */
+        width: 230vw;
+        margin: 0 auto;
+
+    }
+
+    main {
+        width: 230vw;
+    }
+
+
+    .vision img,
+    .mision img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .vision p,
+    .mision p {
+        font-size: 30px;
+    }
+
+    .equipo img {
+        width: 180px;
+        height: 180px;
+    }
+
+    footer {
+        width: 230vw;
+    }
+
+    .modal-contenedor {
+        width: 510px;
+        height: 60vh;
+    }
+
+    .Eres-Increible {
+        width: 100%;
+        height: 65px;
+        font-size: 20px;
+
+    }
+
+    .controles {
+        width: 40%;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width:1024px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        /* ancho */
+        /* vw -> ancho de pantalla
+                vh -> alto de pantalla
+            */
+        width: 100vw;
+        margin: 0 auto;
+
+    }
+
+
+    main {
+        width: 100vw;
+    }
+
+    .baner {
+
+        width: 80vh;
+        height: 80vh;
+    }
+
+    .modal-contenedor {
+        width: 520px;
+        height: 40vh;
+    }
+
+    .Eres-Increible {
+        width: 100%;
+        height: 65px;
+        font-size: 20px;
+
+    }
+
+    .controles {
+        width: 40%;
+        padding: 4px 8px;
+    }
+
+
+
+
+
+}

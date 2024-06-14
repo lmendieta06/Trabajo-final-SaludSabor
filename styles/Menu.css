@@ -1,0 +1,176 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
+
+:root {
+    --colortexto: #18C78F;
+    --colortexto2: #FFC963;
+    --colorcontraste: #57E391;
+    --textTitle: "Ruda", sans-serif;
+    --textContent: 'Montserrat', sans-serif;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+body {
+    /* Ancho del tamaño de mi pantalla */
+    width: 100%;
+font-family: var(--textContent);
+
+}
+
+header {
+    /* ancho */
+    /* vw -> ancho de pantalla
+            vh -> alto de pantalla
+        */
+    width: 100vw;
+    margin: 0 auto;
+
+}
+
+.InicioLogo {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+
+}
+
+.InicioLogo img {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    margin-left: 100px;
+
+display: flex;
+justify-content: space-around;
+}
+.volver-back img{
+    width: 65px;
+    height: 65px;
+}
+
+.ContenedorInicio ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 100px;
+}
+
+
+.ContenedorInicio Img {
+    width: 50px;
+    height: 47px;
+    margin-right: 10px;
+    margin-top: 5px;
+
+}
+
+.img-log {
+    border-radius: 50px;
+}
+
+/* aca finaliza el encabezado y empieza el menu navegador */
+nav {
+    width: 100%;
+    height: 30px;
+    background-color: #FFC963;
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+    gap: 2%;
+    list-style: none;
+    position: fixed;
+    z-index: 100;
+    top: 100px;
+    left: 0;
+   
+
+}
+
+
+.nav-items{
+    margin-left: 20px;
+    
+    font-size: 19px;
+    font-family: "Ruda", sans-serif;
+    color: #ffffff;
+  
+
+}
+
+
+.baner {
+
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+
+}
+
+/* mi imagen ocupa todo el espacio de su padre */
+.baner img {
+    width: 100%;
+    height: 100%;
+    /* manipular la img */
+    object-fit: cover;
+    filter: brightness(0.7);
+    /* Reducir el brillo al 80% */
+
+}
+
+
+.suna {
+    text-transform: uppercase;
+    position: absolute;
+    top: 30%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    font-family: var(--textTitle);
+    font-size: 93px;
+    font-weight: bolder;
+    color: white;
+
+
+}
+main{
+    margin-top: 50px;
+}
+/* productos */
+
+.misProductos img{
+    width: 270px;
+    height: 150px;
+}
+.miContenedor2{
+    margin-top: 20px;
+    border: solid red;
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+.foto-carne{
+    width: 200px;
+    height: 150px;
+}
