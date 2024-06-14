@@ -58,7 +58,8 @@ header {
     width: 150px;
     height: 150px;
     padding: 10px;
-    margin-left: 100px;
+    margin-left: 140px;
+    
 
 display: flex;
 justify-content: space-around;
@@ -108,7 +109,7 @@ nav {
 
 
 .nav-items{
-    margin-left: 20px;
+    margin-left: 50px;
     
     font-size: 19px;
     font-family: "Ruda", sans-serif;
@@ -163,14 +164,203 @@ main{
     width: 270px;
     height: 150px;
 }
-.miContenedor2{
-    margin-top: 20px;
-    border: solid red;
-  display: flex;
-justify-content: center;
-align-items: center;
+.miContenedor1{
+    padding: 20px 0 40px 0;
 }
+.miContenedor2{
+    padding-bottom: 20px;
+    margin: 50px;
+  display: grid;
+ grid-template-rows: 1fr 1fr;
+ grid-template-columns: 1fr 1fr;
+}
+.titulosDeSeccion{
+    margin-left: 100px;
+    font-family: var(--textTitle);
+    color: var(--colortexto);
+    font-weight: bolder;
+}
+
+
+.chatBot{
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    background-color: var(--colorcontraste);
+    border-radius: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatBot i{
+    
+    color:white;
+    text-decoration: none;
+}
+
+
+
+
 .foto-carne{
-    width: 200px;
-    height: 150px;
+    width: 240px;
+    height: 190px;
+    border-radius: 15px;
+}
+/* foooooter */
+footer {
+
+    background-color: var(--colortexto);
+    width: 100%;
+    height: 250px;
+    color: white;
+    text-align: center;
+}
+
+.hdos {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+    text-decoration-line: underline;
+}
+
+.htres {
+    font-size: 15px;
+}
+
+footer p {
+
+
+    font-family: var(--textTitle);
+}
+
+.contenidoFooter {
+
+    height: 230px;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenidoFooter img {
+    width: 230px;
+    height: 230px;
+}
+
+.enlaces {
+    width: 20%;
+    height: 40px;
+    margin-top: 30px;
+    text-align: left;
+
+
+}
+
+.redes {
+
+    display: flex;
+    margin-top: 5%;
+    margin-right: 50px;
+    gap: 5%;
+
+}
+
+.redes a {
+    text-decoration: none;
+    color: white;
+}
+
+.infoFooter {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+
+}
+
+.infoFooter a {
+
+    color: white;
+    text-decoration: none;
+    font-family: var(--tipografiaTexto);
+
+
+}
+/* aqui emmpieza el responsive para dispositivos moviles */
+
+
+@media (max-width:1024px){
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    .miContenedor2{
+        width:100vw ;
+        padding: 10px;
+      
+     
+    }
+}
+@media (max-width:650px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        /* ancho */
+        /* vw -> ancho de pantalla
+                vh -> alto de pantalla
+            */
+        width: 230vw;
+        margin: 0 auto;
+
+    }
+
+    main {
+        
+        width: 230vw;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+
+    
+    footer {
+        width: 230vw;
+    }
+
+    .modal-contenedor {
+        width: 510px;
+        height: 60vh;
+    }
+
+    .Eres-Increible {
+        width: 100%;
+        height: 65px;
+        font-size: 20px;
+
+    }
+
+    .controles {
+        width: 40%;
+        padding: 4px 8px;
+    }
+
+
+    
+    .miContenedor2{
+        width:230vw;
+        margin: 0 auto;
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+    }
 }
