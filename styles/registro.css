@@ -188,6 +188,75 @@ footer{
 
 }
 
+/* ESTILOS DE MODALES */
+
+/* MODAL DE CREACION */
+
+.modalCreacion{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(128, 128, 128, 0.368);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* Para poder interactuar con la pagina */
+    pointer-events: none;
+    transition: opacity .6s;
+}
+
+.modalCreacion--show{
+    opacity: 1;
+    pointer-events: unset;
+    /* Transicion para hacer mas amable la aparicion */
+    transition: opacity .6s;
+}
+.contenedorModalCreacion{
+    width: 90%;
+    max-width: 500px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorFondo);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contenedorModalCreacion img{
+    width: 150px;
+}
+
+.contenedorModalCreacion h2{
+    font-family: var(--tipografiaTexto);
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contenedorModalCreacion a{
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--colorNav);
+    font-family: var(--tipografiaTexto);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.contenedorModalCreacion a:hover{
+    background-color: var(--colorFiguras);
+}
+
 /* Pantallas medianas */
 @media screen and (max-width:1000px){
     .containerModal{

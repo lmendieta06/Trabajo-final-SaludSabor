@@ -33,14 +33,14 @@
                     </div>
                 </div>
                 <div class="formsSingUp">
-                    <form action="/script/registro.js">
+                    <form>
                         <input class="controles" type="text" name="Multiple" value="" placeholder="Nombre" required>
                         <select class="form-control me-2 controles" id="categorySelect" required>
                             <option value="" disabled selected>Seleccione tipo de documento</option>
-                            <option value="all">Cedula Ciudadania</option>
-                            <option value="almuerzo">Tarjeta de identidad</option>
-                            <option value="cena">Cedula de extranjeria</option>
-                            <option value="ensalada">Pasaporte</option>
+                            <option value="cedula">Cedula Ciudadania</option>
+                            <option value="tarjeta">Tarjeta de identidad</option>
+                            <option value="extranjero">Cedula de extranjeria</option>
+                            <option value="pasaporte">Pasaporte</option>
                         </select>
                         <input class="controles" type="text" name="Contraseña" value="" placeholder="Numero de documento" required>
                         <input class="controles" type="email" name="email" value="" placeholder="Correo electronico" required>
@@ -51,11 +51,19 @@
                 </div>
             </div>
         </section>
+
+        <section class="modalCreacion">
+            <div class="contenedorModalCreacion">
+                <img src="../assets/imagenes/ilustracionCreacion.svg" alt="exitoso">
+                <h2>CUENTA CREADA SATISFACTORIAMENTE</h2>
+                <a href="#" class="modalCreacionClose">OK</a>
+            </div>
+        </section>
     </main>
     <!-- FOOTER -->
     <footer>
         <div class="copyRight">
-            <p >Desarrollado por &copy; Salud & Sabor - Colombia</p>
+            <p>Desarrollado por &copy; Salud & Sabor - Colombia</p>
         </div>
     </footer>
 </body>
