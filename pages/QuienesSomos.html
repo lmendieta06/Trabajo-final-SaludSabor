@@ -7,7 +7,7 @@
     <meta name="author" content="Salud y sabor">
     <meta name="keywords" content="Quienes somos, salud y sabor, alimentacion sana, mision, vision, equipo">
     <meta name="description" content="Pagina informativa sobre salud y sabor">
-    <link rel="icon" href="./assets/IMAGENES PARA PROYECTO FINAL/LOGO_SALUD_Y_SABOR-removebg-preview.png" type="image/x-icon">
+    <link rel="icon" href="../assets/IMAGENES PARA PROYECTO FINAL/LOGO_SALUD_Y_SABOR-removebg-preview.png" type="image/x-icon">
     <script src="../js/enConstruccion.js" defer></script>
     <script src="../js/contraseña.js" defer></script>
     <script src="../js/modal.js" defer></script>
@@ -16,23 +16,21 @@
     <link rel="stylesheet" href="../styles/login.css">
     <link rel="stylesheet" href="../styles/Contraseña.css">
     <link rel="stylesheet" href="../styles/QuienesSomos.css">
-    ">
-
     
-    <title>¿Quiénes somos?</title>
+    <title>Salud & Sabor - ¿Quiénes somos?</title>
 </head>
 
 <body>
     <header>
         <div class="InicioLogo">
-            <a href="index.html"><img src="../assets/IMAGENES PARA PROYECTO FINAL/LOGO SALUD Y SABOR.png"
+            <a href="../index.html"><img src="../assets/IMAGENES PARA PROYECTO FINAL/LOGO SALUD Y SABOR.png"
                     alt="logo/saludSabor"></a>
 
             <div class="ContenedorInicio">
 
                 <ul>
 
-                    <li>¿Ya tienes cuenta?<a href="#"><span class="boton-clave"> Inicia sesión </span></a></li>
+                    <li class="textoInicioSesion">¿Ya tienes cuenta?<a href="#"><span class="boton-clave"> Inicia sesión </span></a></li>
                     <li>
 
                         <a  href="#">
@@ -43,6 +41,7 @@
                 </ul>
             </div>
         </div>
+        <!-- MODAL INICIO DE SESION -->
         <section class="modal ">
             <div class="modal-contenedor">
                 <a class="Cerrar-modal" href="#">x</a>
@@ -58,7 +57,7 @@
                     <input class="controles" type="password" name="Contraseña" value="" placeholder="Contraseña">
                     <p><a class="recuperar-pass" href="#">¿Olvidaste tu contraseña?</a></p>
                     <input class="botones" type="submit" name="" value="Entrar">
-                    <p>¿No tienes cuenta?<a href="#"><span> Crear cuenta</span></a></p>
+                    <p>¿No tienes cuenta?<a href="./registro.html"><span> Crear cuenta</span></a></p>
                     <p>Al crear una cuenta, aceptas nuestros <strong>términos y condiciones</strong></p>
                 </div>
             </div>
@@ -86,19 +85,19 @@
             </div>
         </section> 
         <nav>
-            <a href="index.html">
+            <a href="../index.html">
                 <h3>Inicio</h3>
             </a>
             <a href="QuienesSomos.html">
                 <h3>¿Quiénes somos?</h3>
             </a>
-            <a href="index.html">
+            <a href="../index.html">
                 <h3>¿Cómo funciona?</h3>
             </a>
             <a class="enProceso" href="#">
                 <h3>Recetas en casa</h3>
             </a>
-            <a href="#pieDePagina">
+            <a href="./contactanos.html">
                 <h3>Contáctanos</h3>
             </a>
         </nav>
@@ -188,8 +187,8 @@
                 <h2 class="hdos">Navega</h2>
                 <div class="infoFooter">
                     <a class="boton-clave" href="#">Inicio Sesion</a>
-                    <a href="index.html">Como funciona</a>
-                    <a href="#">Realiza tu pedido</a>
+                    <a href="../index.html">Como funciona</a>
+                    <a href="./buscarCiudad.html">Realiza tu pedido</a>
                 </div>
             </article>
             <article>

@@ -3,119 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACTANOS</title>
+    <title>Salud & Sabor - Contactanos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="../assets/logo/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/IMAGENES PARA PROYECTO FINAL/LOGO_SALUD_Y_SABOR-removebg-preview.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <!-- LINK CSS -->
     <link rel="stylesheet" type="text/css" href="../styles/contactanos.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/Contraseña.css">
+    <link rel="stylesheet" href="../styles/enConstruccion.css">
+    <!-- LINK ICONOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- LINK JAVASCRIPT -->
+    <script src="../js/contraseña.js" defer></script>
+    <script src="../js/modal.js" defer></script>
+    <script src="../js/enConstruccion.js" defer></script>
 </head>
 <body>
-    <section class="encabezado">
-        <section id="logo">
-            <img class="logo" src="../assets/logo_encabezado-removebg-preview.png alt="logo salud sabor">
-        </section>
-        <section id="inicia">
-            <p class="textInicia">¿Ya tienes cuenta?</p>
-            <a class="textInicia" href="#"><strong>Inicia sesión</strong></a> 
-            <img class="logoInicio" src="../assets/inicio o.jpg" alt="logo inicio">
-        </section>
+    <!-- HEADER -->
+    <header>
+        <!-- LOGO E INICIO DE SESION -->
+        <div class="barraLogo">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/logo/logoSinFondo.png" alt="logo">
+                </a>
+            </div>
+            <div class="inicioSesionOpcion boton-clave">
+                <p>
+                    ¿Ya tienes cuenta?<a href="" class="boton-clave"> Inicia sesión</a>
+                </p>
+                <div class="inicioSesionUser">
+                    <a href="#">
+                        <i class="bi bi-person-fill inicioSesionUser"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- NAVEGADOR -->
+         <nav class="menuNav">
+            <ul class="listaMenu">
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./QuienesSomos.html">¿Quienes somos?</a>
+                </li>
+                <li>
+                    <a href="../index.html">¿Como funciona?</a>
+                </li>
+                <li>
+                    <a href="#" class="enProceso">Recetas en casa</a>
+                </li>
+                <li>
+                    <a href="./contactanos.html">Contáctanos</a>
+                </li>
+            </ul>
+         </nav>
+ 
+    <!-- MODAL INICIO DE SESION -->
+    <section class="modal ">
+        <div class="modal-contenedor">
+            <a class="Cerrar-modal" href="#">x</a>
+            <img src="../assets/IMAGENES PARA PROYECTO FINAL/LOGO SALUD Y SABOR.png" alt="logo-saborysalud"
+                class="Log-ss">
+            <article class="Eres-Increible">
+                <h2 class="modal-titulo">¡ERES INCREIBLE! <br> Bienvenido</h2>
+
+            </article>
+
+            <div class="input-login">
+                <input class="controles" type="email" name="Multiple" value="" placeholder="email">
+                <input class="controles" type="password" name="Contraseña" value="" placeholder="Contraseña">
+                <p><a class="recuperar-pass" href="#">¿Olvidaste tu contraseña?</a></p>
+                <input class="botones" type="submit" name="" value="Entrar">
+                <p>¿No tienes cuenta?<a href="./registro.html"><span> Crear cuenta</span></a></p>
+                <p>Al crear una cuenta, aceptas nuestros <strong>términos y condiciones</strong></p>
+            </div>
+        </div>
     </section>
-    <nav>
-        <a clas="textNav" href="../index.html"><h3>Inicio</h3></a>
-        <a clas="textNav" href="./QuienesSomos.html"><h3>¿Quienes somos?</h3></a>
-        <a clas="textNav" href="../index.html"><h3>¿Cómo funciona?</h3></a>
-        <a clas="textNav" href="#"><h3>Resetas en casa</h3></a>
-        <a clas="textNav" href="./contactanos.html"><h3>Contáctanos</h3></a>
-    </nav>
+    <section class="modal__contraseña">
+        <div class="modal-container">
+            <a class="Cerrar--modal" href="#">x</a>
+            <h4 class="title-modal">Recuperación de contraseña</h4>
+            <p class="envia-correo">Introduzca su dirección de correo electrónico en el cuadro. Presione el botón
+                Enviar.
+                Asegúrese de agregar la dirección de correo electrónico válida.</p>
+
+            <div class="input-mail">
+                <input class="caja-correo" type="email" name="email" value="" placeholder="Ingresa tu correo">
+                <input class="boton-contraseña" type="submit" name="" value="Enviar">
+            </div>
+        </div>
+    </section>
+     <!-- VENTANA MODAL CONSTRUCCION -->
+     <section class="modalConstruccion">
+        <div class="contenedorModalConstruccion">
+            <img src="../assets/IMAGENES PARA PROYECTO FINAL/image 29.svg" alt="">
+            <p class="pcons">PAGINA EN CONSTRUCCION</p>
+            <a href="#" class="modalConstruccionClose">OK</a>
+        </div>
+    </section> 
+
+    </header>
+<!-- MAIN -->
     <main>
-        <section id="textoMain">
+        <section id="textoMain" class="contenedorInfo">
             <p class="textoMain">
                 Para nosotros es muy importante ofrecer siempre un buen servicio, por esto aqui te presentamos nuestros canales de contacto donde con gusto nuestro equipo te atendera.
             </p>
-        </section>
-        <section>
             <img class="imgMain" src="../assets/imagen 1.jpg" alt="Personal de atencion al cliente">
+
         </section>
-        <section>
+
+        <section id="textoMain" class="contenedorInfo">
             <img class="imgMain" src="../assets/imagen 2.png" alt="Cliente satisfecho">
-        </section>
-        <section id="textoMain">
             <p class="textoMain">
-                • ¿Tienes alguna duda o inquietud sonbre nuestros servicios?<br><br>
+                • ¿Tienes alguna duda o inquietud sobre nuestros servicios?<br><br>
                 • Por favor dejanos tus opiniones y/o sugerencias, es importante para nosotros!
             </p>
         </section>
+        <section class="canalAtencion">
+            <h1>Canales de atencion</h1>
+            <div class="enlacesRedes">
+                <div>
+                    <a href="https://api.whatsapp.com/send?phone=3193408310">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="tel:+573193408310">
+                        <i class="bi bi-telephone-fill"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="mailto:laumendieta06@gmail.com">
+                        <i class="bi bi-envelope-at"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>  
+            </div>
+        </section>
+
+        <section class="preguntasFrecuentes">
+            <h2>PREGUNTAS FRECUENTES</h2>
+            <div class="contenedorPreguntas">
+                <div class="preguntas">
+                    <p class="textoPreguntas">
+                        1. Cuanto cuestan los envios a mi ubicacion?<br>
+                        2. Que pasa si mi pedido no llega?<br>
+                        3. Como puedo solicitar la devolucion de mi dinero?<br>
+                        4. Que debo hacer si no recibo lo que pedi?<br>
+                        5. Cuantos pares son tres moscas?<br>
+                    </p>
+                </div>
+                <div class="brocoli">
+                        <img src="../assets/brocoli.png" alt="brocoli con inquietudes">
+                </div>
+            </div>
+        </section>
     </main>
-    <section class="canalAtencion">
-        <h1>Canales de atencion</h1>
-    </section>
-    <section class="canales">
-        <div><img class="icon" src="../assets/whatsapp.png" alt="whatsapp"></div>
-        <div><img class="icon" src="../assets/facebook.png" alt="facebook"></div>
-        <div><img class="icon" src="../assets/instagram.png" alt="instagram"></div>
-        <div><img class="icon" src="../assets/email.png" alt="email"></div>
-        <div><img class="icon" src="../assets/telefono.png" alt="telefono"></div>
-    </section>
-    <section class="canalAtencion">
-        <h1>Preguntas frecuentes</h1>
-    </section>
-    <section class="preguntasFrecuentes">
-        <div class="preguntas">
-            <p class="textoPreguntas">
-                1. Cuanto cuestan los envios a mi ubicacion?<br>
-                2. Que pasa si mi pedido no llega?<br>
-                3. Como puedo solicitar la devolucion de mi dinero?<br>
-                4. Que debo hacer si no recibo lo que pedi?<br>
-                5. Cuantos pares son tres moscas?<br>
-            </p>
+<!-- FOOTER -->
+<footer id="pieDePagina">
+    <div class="contenidoFooter">
+        <div class="enlacesFooter">
+            <article class="enlaces">
+                <h2>Contactanos</h2>
+                <div class="redes">
+                    <i class="bi bi-telephone-fill"></i>
+                    <p>+57 321 459 7632</p>
+                </div>
+                <div class="redes">
+                    <i class="bi bi-instagram"></i>
+                    <a href="#">
+                        <p>@salud_sabor</p>
+                    </a>
+                </div>
+            </article>
+            <article class="enlaces">
+                <h2>Terminos y condiciones</h2>
+                <div class="infoFooter">
+                    <a href="#">Terminos legales</a>
+                    <a href="#">Politicas de seguridad</a>
+                </div>
+            </article>
+            <article class="enlaces">
+                <h2>Navega</h2>
+                <div class="infoFooter">
+                    <a href="#" class="boton-clave">Inicio Sesion</a>
+                    <a href="../index.html">Como funciona</a>
+                    <a href="./buscarCiudad.html">Realiza tu pedido</a>
+                </div>
+            </article>
         </div>
-        <div class="brocoli">
-                <img src="../assets/brocoli.png" alt="brocoli con inquietudes">
-        </div>
-    </section>
-    <footer class="piePag">
-        <section class="piePagInt">
-            <div>
-                <h3 class="titulosFooter">Contactanos</h3>
-                <section class="infoContacto">
-                    <div class="divInfo">
-                        <img class="iconFooter" src="../assets/telefono.png" alt="telefono">
-                    </div>
-                    <div class="divInfo">
-                        <p class="textInfo">+573214597632</p>
-                    </div>
-                    <div class="divInfo">
-                        <img class="iconFooter" src="../assets/instagram.png" alt="instagram">
-                    </div>
-                    <div class="divInfo">
-                        <p class="textInfo">@salud_sabor</p>
-                    </div>
-                </section>
-            </div>
-            <div class="terminos">
-                <h3 class="titulosFooter">Terminos y condiciones</h3>
-                <p class="textTN">
-                    Terminos legales<br>
-                    Politicas de seguridad
-                </p>
-            </div>
-            <div class="navega">
-                <h3 class="titulosFooter">Navega</h3>
-                <p class="textTN">Inicio Sesion<br>
-                   Como funciona<br>
-                   Realiza tu pedido
-                </p>
-            </div>
-            <div class="logo">
-                <img class="logoFooter" src="../assets/logo salud sabor.png" alt="logo salud sabor">
-            </div>
-        </section>
-        <section class="autor">
-            <div>
-                <p class="textAutor">Realizado por SaludSabor - Colombia</p>
-            </div>
-        </section>
-    </footer>
+        <article class="imgFooter">
+            <img src="../assets/logo/logoFooter.jpg" alt="logopng">
+        </article>
+    </div>
+    <div class="copyRight">
+        <p >Desarrollado por &copy; Salud & Sabor - Colombia</p>
+    </div>
+</footer>
 </body>
 </html>

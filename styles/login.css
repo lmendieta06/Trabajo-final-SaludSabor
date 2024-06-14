@@ -1,21 +1,21 @@
-
-
-
+/* Importaciones */
 @import url('https://fonts.cdnfonts.com/css/montserrat');
-@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.cdnfonts.com/css/ruda');
+/* font-family: 'Ruda', sans-serif; */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Variables - Pseudoclase */
+:root{
+    /* TIPOGRAFIAS */
+    --tipografiaTexto:'Montserrat', sans-serif;
+    --tipografiaTitulos: 'Ruda', sans-serif;
+    /* PALETA DE COLORES */
+    --colorFondo: white;
+    --colorNav: #FFC963;
+    --colorContraste: #18C78F;
+    --colorContraste2: #57E391;
+    --colorFiguras: #FFE1A9;
 
-:root {
-    --colortexto: #18C78F;
-    --colortexto2: #FFC963;
-    --colorcontraste: #57E391;
-    --textTitle: "Ruda", sans-serif;
-    --textContent: 'Montserrat', sans-serif;
 }
 
 body {
@@ -27,18 +27,19 @@ body {
 
 .modal{
     position: fixed;
-    z-index: 101;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     opacity: 0;
-    background-color: #000000d8;
     pointer-events: none;
     transition: opacity .6s .9s;
     --transform: translateY(-100vh);
     --transition: transform .8s;
-
+    z-index: 100;
+    background-color: rgba(128, 128, 128, 0.262);
 
 }
 .modal--mostrar{
@@ -49,9 +50,9 @@ body {
     ---transition: transform .8s .8s;
 }
 .modal-contenedor {
-border:2px solid #18C78F;
+    border:2px solid #18C78F;
     margin: 0 auto;
-    width: 700px;
+    width: 50%;
     height: 76vh;
     background-color: #fffcfc;
     border-radius: 15px;
@@ -68,11 +69,14 @@ border:2px solid #18C78F;
 }
 
 .Eres-Increible {
-    width: 45vw;
+    width: 100%;
     height: 10vh;
     background: #daac5632;
-    font-family: var(--textTitle);
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--tipografiaTitulos);
 }
 .modal-titulo {
     font-size: 25px;
@@ -87,9 +91,9 @@ border:2px solid #18C78F;
 
 
 .input-login {
-    width: 500px;
-   margin: auto;
-   font-family: var(--textContent);
+    width: 90%;
+    margin: auto;
+    font-family: var(--tipografiaTexto);
    
 }
 
@@ -101,7 +105,7 @@ border:2px solid #18C78F;
     margin: 0 auto;
     margin-bottom: 7px;
     padding: 12px 8px;
-    font-family: var(--textContent);
+    font-family: var(--tipografiaTexto);
     font-size: 12px;
     font-weight: 300;
     box-shadow: 6px 5px 5px #d7d1d1;
@@ -119,7 +123,7 @@ border:2px solid #18C78F;
     width: 30%;
     height: 40px;
     border-radius: 7px;
-    background: var(--colortexto2);
+    background: var(--colorContraste2);
     border: none;
     color: #ffffff;
     margin-bottom: 16px;
@@ -178,4 +182,25 @@ strong {
     border: solid rgba(0, 0, 0, 0.519);
     background: white;
     color: rgba(0, 0, 0, 0.599);
+}
+
+@media screen and (max-width:1100px){
+    .modal-contenedor{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width:830px){
+    .modal-contenedor{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width:650px){
+    .modal-contenedor{
+        width: 90%;
+    }
+    
 }

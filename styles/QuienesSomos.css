@@ -73,11 +73,17 @@ header {
 
 
 
-.ContenedorInicio ul li a span {
+.ContenedorInicio ul, .ContenedorInicio a, .ContenedorInicio span {
     
+    font-family: var(--textContent);
     font-weight: bold;
     color: rgba(0, 0, 0, 0.811);
 
+}
+
+.ContenedorInicio li{
+    font-family: var(--textContent);
+    font-weight: lighter;
 }
 
 .ContenedorInicio ul li img {

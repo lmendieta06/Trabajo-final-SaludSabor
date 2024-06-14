@@ -1,30 +1,30 @@
-
+/* Importaciones */
 @import url('https://fonts.cdnfonts.com/css/montserrat');
-@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.cdnfonts.com/css/ruda');
+/* font-family: 'Ruda', sans-serif; */
+
+/* Variables - Pseudoclase */
+:root{
+    /* TIPOGRAFIAS */
+    --tipografiaTexto:'Montserrat', sans-serif;
+    --tipografiaTitulos: 'Ruda', sans-serif;
+    /* PALETA DE COLORES */
+    --colorFondo: white;
+    --colorNav: #FFC963;
+    --colorContraste: #18C78F;
+    --colorContraste2: #57E391;
+    --colorFiguras: #FFE1A9;
+
 }
 
 
-:root {
-    --colortexto: #18C78F;
-    --colortexto2: #FFC963;
-    --colorcontraste: #57E391;
-    --textTitle: "Ruda", sans-serif;
-    --textContent: 'Montserrat', sans-serif;
-}
+/* MODAL DE CARRITO */
 
-/* ESTILOS DE MODALES */
-
-/* MODAL DE CONSTRUCCION */
-
-.modalConstruccion{
+.modalCarrito{
     width: 100%;
     height: 100%;
     position: fixed;
-    z-index: 106;
     top: 0;
     left: 0;
     right: 0;
@@ -40,13 +40,13 @@
     transition: opacity .6s;
 }
 
-.modalConstruccion--show{
+.modalCarrito--show{
     opacity: 1;
     pointer-events: unset;
     /* Transicion para hacer mas amable la aparicion */
     transition: opacity .6s;
 }
-.contenedorModalConstruccion{
+.contenedorModalCarrito{
     width: 90%;
     max-width: 500px;
     margin: 0;
@@ -54,34 +54,34 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: var(--colorFondo);
     border-radius: 10px;
     padding: 20px;
 }
 
-.contenedorModalConstruccion img{
+.contenedorModalCarrito img{
     width: 150px;
 }
 
-.pcons{
-    font-family: var(--textContent);
+.contenedorModalCarrito h2{
+    font-family: var(--tipografiaTexto);
     font-weight: 700;
     font-size: 20px;
     text-align: center;
 }
 
-.contenedorModalConstruccion a{
+.contenedorModalCarrito a{
     width: 50px;
     text-align: center;
     text-decoration: none;
-    background-color: var(--colortexto2);
-    font-family: var(--textContent);
+    background-color: var(--colorNav);
+    font-family: var(--tipografiaTexto);
     color: white;
     font-weight: 700;
     font-size: 20px;
     border-radius: 5px;
 }
 
-.contenedorModalConstruccion a:hover{
-    background-color: var(--colortexto2);
+.contenedorModalCarrito a:hover{
+    background-color: var(--colorFiguras);
 }

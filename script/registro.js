@@ -1,3 +1,4 @@
+// FUNCIONAMIENTO FORMULARIO
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('form');
 
@@ -48,3 +49,11 @@ function mostrarModal(){
 
 }
 
+// FUNCIONAMIENTO BOTON VOLVER
+
+const botonVolver = document.querySelector(".volverBoton");
+
+botonVolver.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.history.back();
+})
