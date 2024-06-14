@@ -1,2 +1,2 @@
 # Trabajo-final-SaludSabor
-hola aqui van los html de QUIENES SOMOS(con modales) Y MENU(falta desarrollar) añadido a eso los CSS de cada archivo y los JS de modales.
+hola aqui van todos los responsives actualizados y la pagina de menu, todo linkiado y las paginas en carpeta pages. solo falta el modal de agregado a carrito mañana lo hago y y hago el merge

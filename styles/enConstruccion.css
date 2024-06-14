@@ -1,152 +1,92 @@
-/* .modal{
+
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --colortexto: #18C78F;
+    --colortexto2: #FFC963;
+    --colorcontraste: #57E391;
+    --textTitle: "Ruda", sans-serif;
+    --textContent: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+/* ESTILOS DE MODALES */
+
+/* MODAL DE CONSTRUCCION */
+
+.modalConstruccion{
+    width: 100%;
+    height: 100%;
     position: fixed;
+    z-index: 106;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 100;
+    background-color: rgba(128, 128, 128, 0.368);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
+    /* Para poder interactuar con la pagina */
     pointer-events: none;
-    transition: opacity .6s .9s;
-    --transform: translateY(-100vh);
-    --transition: transform .8s;
-
-
+    transition: opacity .6s;
 }
-.modal--mostrar{
+
+.modalConstruccion--show{
     opacity: 1;
     pointer-events: unset;
+    /* Transicion para hacer mas amable la aparicion */
     transition: opacity .6s;
-    --transform: translateY(0);
-    ---transition: transform .8s .8s;
 }
-.modal-contenedor {
-border:2px solid #18C78F;
-    margin: 0 auto;
-    width: 700px;
-    height: 76vh;
-    background-color: #fffcfc;
-    border-radius: 15px;
-    margin-top: 140px;
-    display: grid;
-    place-items: center;
-    transform: var(--transform);
-    transition: var(--transition);
+.contenedorModalConstruccion{
+    width: 90%;
+    max-width: 500px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
 }
 
-.modal img {
-    margin-top: 2px;
+.contenedorModalConstruccion img{
     width: 150px;
 }
 
-article {
-    width: 45vw;
-    height: 10vh;
-    background: #daac5632;
-    font-family: var(--textTitle);
-   
-}
-.modal-titulo {
-    font-size: 25px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    color:var(--colorcontraste);
-
-
-}
-
-
-.input-login {
-    width: 500px;
-   margin: auto;
-   font-family: var(--textContent);
-   
-}
-
-.controles {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 7px;
-    padding: 12px 8px;
+.pcons{
     font-family: var(--textContent);
-    font-size: 12px;
-    font-weight: 300;
-    box-shadow: 6px 5px 5px #d7d1d1;
-    outline: none;
-}
-
-
-
-
-.botones {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: 30%;
-    height: 40px;
-    border-radius: 7px;
-    background: var(--colortexto2);
-    border: none;
-    color: #ffffff;
-    margin-bottom: 16px;
-}
-.botones:hover{
-    background-color: #ffffff;
-    border: solid #FFC963;
-    color: var(--colortexto2);
-}
-
-.input-login p {
-    height: 40px;
-    text-align: center;
-    color: var(--colortexto)
-}
-
-strong {
-    font-weight: bolder;
-}
-
-.input-login a {
-    color: var(--colortexto);
-    text-decoration: none;
-    font-size: 14px;
-    font-family: var(--textContent);
-
-}
-
-.input-login a span {
-    color: var(--colortexto2);
-    font-weight: bolder;
-    font-family: var(--textContent);
-    transition: transform .2s;
-}
-
-.input-login a span:hover {
-  color:rgb(14, 14, 12);
-  
-
-}
-
-.Cerrar-modal{
-   font-family: var(--textTitle);
+    font-weight: 700;
     font-size: 20px;
-    text-decoration: none;
-   font-weight: bolder;
-    padding:4px 12px;
-    background-color:rgba(0, 0, 0, 0.179);
-    border-radius: 10px;
-    color: white;
-    position: absolute;
-    top:3%;
-    left:91%
+    text-align: center;
 }
-.Cerrar-modal:hover{
-    border: solid rgba(0, 0, 0, 0.519);
-    background: white;
-    color: rgba(0, 0, 0, 0.599);
-} */
+
+.contenedorModalConstruccion a{
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--colortexto2);
+    font-family: var(--textContent);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.contenedorModalConstruccion a:hover{
+    background-color: var(--colortexto2);
+}
