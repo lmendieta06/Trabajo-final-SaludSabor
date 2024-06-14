@@ -1,3 +1,6 @@
+@media screen and (max-width:1700px) {
+    
+
 body{
     width: 100%;
     height: auto;
@@ -60,7 +63,7 @@ nav{
 }
 
 .textNav{
-    height: 50px;
+    height: 30px;
     align-content: center;
     font-family: "Ruda", sans-serif;
 }
@@ -237,4 +240,288 @@ h1{
     font-family: "Ruda", sans-serif;
     font-size: 24px;
     color: #ffffff;
+}
+
+.encabezadoCarrito{
+    width: 100%;
+    height: 185px;
+    background-color: #FFC963;
+    display: grid;
+    grid-template-columns: 1fr 3fr 5fr;
+    grid-template-rows: 1fr;
+}
+
+.logoEncabezado{
+    width: 180px;
+    height: 180px;
+}
+
+.seccionEncabezado{
+    display: flex;
+    align-items: center;
+}
+
+.carrito{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.principal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.productos{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 80px;
+}
+
+.detalle{
+    display: flex;
+    justify-content: center;
+}
+
+.comentarios{
+    width: 1186px;
+    height: 339px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 0 rgba(20, 20, 20, 0.3);
+}
+
+.textComentarios{
+    font-size: 40px;
+    color: #18C78F;
+}
+}
+
+@media screen and (max-width:1020px) {
+    nav{
+        width: 100%;
+    } 
+
+    h3{
+        margin: 0px;
+        font-size: 20px;
+        font-family: "Ruda", sans-serif;
+        color: #ffffff;
+    }
+
+    .textoMain{
+        width: 60%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 32px;
+        color: #18C78F;
+        font-family: "Ruda", sans-serif;
+    }
+
+    .textoPreguntas{
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .brocoli img{
+        width: 80%;
+    }
+
+    h3{
+        margin: 0px;
+        font-size: 25px;
+        font-family: "Ruda", sans-serif;
+        color: #ffffff;
+    }
+
+    .textTN{
+        font-family: "Ruda", sans-serif;
+        font-size: 20px;
+        color: #ffffff;
+        margin-left: 30px;
+    }
+
+    .textInfo{
+        font-family: "Ruda", sans-serif;
+        font-size: 20px;
+        color: #ffffff;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .textInicia{
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+        font-family: "Ruda", sans-serif;
+    }
+
+    h3{
+        margin: 0px;
+        font-size: 20px;
+        font-family: "Ruda", sans-serif;
+        color: #ffffff;
+    }
+
+    .textTN{
+        font-family: "Ruda", sans-serif;
+        font-size: 15px;
+        color: #ffffff;
+        margin-left: 30px;
+    }
+
+    .textInfo{
+        font-family: "Ruda", sans-serif;
+        font-size: 15px;
+        color: #ffffff;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+
+    .logoInicio{
+        width: 50px;
+        height: 46px;
+        margin-right: 50px;
+        border-radius: 10px;
+        box-shadow: 5px;
+    }
+
+    .encabezado {
+        width: 100%;
+        height: 100px;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px 0 rgba(20, 20, 20, 0.3);
+        margin-bottom: 3px;
+    }
+
+    nav{
+        width: 100%;
+        height: auto;
+        background-color: #FFC963;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    h3{
+        margin: 0px;
+        font-size: 20px;
+        font-family: "Ruda", sans-serif;
+        color: #ffffff;
+    }
+
+    .textoMain{
+        width: 60%;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 25px;
+        color: #18C78F;
+        font-family: "Ruda", sans-serif;
+    }
+
+    .canales{
+        width: 100%;
+        height: 50px;
+        background-color: #57E391;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 42px;
+    }
+    
+    .icon{
+        width: 35px;
+        height: 35px;
+    }
+
+    .textoPreguntas{
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .piePag{
+        width: 100%;
+        height: auto;
+        background-color: #18C78F;
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .piePagInt{
+        width: 100%;
+        height: auto;
+        background-color: #18C78F;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .autor{
+        width: 100%;
+        height: auto;
+        border-top: 2px solid white;
+        display: flex;
+        justify-content: center;
+    }
+
+    .textAutor{
+        font-family: "Ruda", sans-serif;
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    .titulosFooter{
+        margin-top: 30px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .textTN{
+        font-family: "Ruda", sans-serif;
+        font-size: 20px;
+        color: #ffffff;
+        margin-left: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logoFooter{
+        width: 100%;
+        height: 100%;
+    }
+
+    .logoPie{
+        display: flex;
+        justify-items: center;
+    }
+
+    .textInfo{
+        font-family: "Ruda", sans-serif;
+        font-size: 20px;
+        color: #ffffff;
+        margin-top: 0px;
+    }
 }
