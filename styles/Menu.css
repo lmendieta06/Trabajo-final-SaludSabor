@@ -24,8 +24,8 @@
 
 body {
     /* Ancho del tamaño de mi pantalla */
-    width: 100%;
-font-family: var(--textContent);
+    width: 100vw;
+    font-family: var(--textContent);
 
 }
 
@@ -59,12 +59,13 @@ header {
     height: 150px;
     padding: 10px;
     margin-left: 140px;
-    
 
-display: flex;
-justify-content: space-around;
+
+    display: flex;
+    justify-content: space-around;
 }
-.volver-back img{
+
+.volver-back img {
     width: 65px;
     height: 65px;
 }
@@ -95,26 +96,26 @@ nav {
     height: 30px;
     background-color: #FFC963;
     display: flex;
-   justify-content: space-around;
-   align-items: center;
+    justify-content: space-around;
+    align-items: center;
     gap: 2%;
     list-style: none;
     position: fixed;
     z-index: 100;
     top: 100px;
     left: 0;
-   
+
 
 }
 
 
-.nav-items{
+.nav-items {
     margin-left: 50px;
-    
+
     font-size: 19px;
     font-family: "Ruda", sans-serif;
     color: #ffffff;
-  
+
 
 }
 
@@ -155,26 +156,31 @@ nav {
 
 
 }
-main{
+
+main {
     margin-top: 50px;
 }
+
 /* productos */
 
-.misProductos img{
+.misProductos img {
     width: 270px;
     height: 150px;
 }
-.miContenedor1{
+
+.miContenedor1 {
     padding: 20px 0 40px 0;
 }
-.miContenedor2{
+
+.miContenedor2 {
     padding-bottom: 20px;
     margin: 50px;
-  display: grid;
- grid-template-rows: 1fr 1fr;
- grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
-.titulosDeSeccion{
+
+.titulosDeSeccion {
     margin-left: 100px;
     font-family: var(--textTitle);
     color: var(--colortexto);
@@ -182,7 +188,7 @@ main{
 }
 
 
-.chatBot{
+.chatBot {
     position: fixed;
     right: 20px;
     bottom: 40px;
@@ -196,121 +202,149 @@ main{
     align-items: center;
 }
 
-.chatBot i{
-    
-    color:white;
+.chatBot i {
+
+    color: white;
     text-decoration: none;
 }
 
 
 
 
-.foto-carne{
+.foto-carne {
     width: 240px;
     height: 190px;
     border-radius: 15px;
 }
-/* foooooter */
-footer {
 
-    background-color: var(--colortexto);
-    width: 100%;
-    height: 250px;
+/* FOOTER */
+footer {
+    background-color: var(--colorContraste);
+    width: 100vw;
+    height: auto;
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.hdos {
-    color: white;
-    font-size: 20px;
-    margin-bottom: 40px;
-    text-align: left;
-    text-decoration-line: underline;
-}
 
-.htres {
-    font-size: 15px;
-}
-
-footer p {
-
-
-    font-family: var(--textTitle);
-}
 
 .contenidoFooter {
-
-    height: 230px;
+    width: 100%;
+    height: auto;
     padding-left: 5%;
     padding-right: 5%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    /* align-items: center; */
 }
 
-.contenidoFooter img {
-    width: 230px;
-    height: 230px;
+/* Contiene todas las clases enlace */
+.enlacesFooter {
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid blue; */
+    width: 80%;
 }
 
 .enlaces {
-    width: 20%;
+    width: 26%;
     height: 40px;
     margin-top: 30px;
     text-align: left;
-
-
 }
 
 .redes {
-
     display: flex;
     margin-top: 5%;
-    margin-right: 50px;
     gap: 5%;
-
 }
 
-.redes a {
+.redes a,
+.redes p {
     text-decoration: none;
     color: white;
+    font-size: 20px;
+    font-family: var(--tipografiaTexto);
 }
 
+/* Padre directo de las a */
 .infoFooter {
     margin-top: 5%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-
+    gap: 5%;
 
 }
 
 .infoFooter a {
-
     color: white;
     text-decoration: none;
+    font-size: 20px;
     font-family: var(--tipografiaTexto);
-
-
 }
+
+/* Logo */
+.imgFooter {
+    width: 200px;
+    height: 200px;
+}
+
+.imgFooter img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
 /* aqui emmpieza el responsive para dispositivos moviles */
 
 
-@media (max-width:1024px){
+@media (max-width:1024px) {
 
     body {
         overflow-x: hidden;
     }
 
 
-    .miContenedor2{
-        width:100vw ;
+    .miContenedor2 {
+        width: 100vw;
         padding: 10px;
-      
-     
+
+
     }
+    .redes a, .redes p{
+        text-decoration: none;
+        color:white;
+        font-size: 15px;
+        font-family: var(--tipografiaTexto);
+    }
+
+    .infoFooter a{
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: var(--tipografiaTexto);
+    }
+
 }
+
 @media (max-width:650px) {
+
+
+
     body {
+        width: 100vw;
         overflow-x: hidden;
     }
 
@@ -319,24 +353,59 @@ footer p {
         /* vw -> ancho de pantalla
                 vh -> alto de pantalla
             */
-        width: 230vw;
-        margin: 0 auto;
+        width: 100vw;
 
+        margin: 0 auto;
     }
 
     main {
-        
-        width: 230vw;
-        margin: 0 auto;
+        width: 100vw;
         margin-top: 20px;
     }
 
+.InicioLogo {
+    width: 100vw;
+    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 
+}
+.InicioLogo img{
+    width: 100px;
+    height: 100px;
+    margin: 0;
     
-    footer {
-        width: 230vw;
-    }
+}
+.volver-back img {
+    width: 50px;
+    height: 50px;
+}
+.ContenedorInicio img{
+    width: 50px;
+    height: 50px;  
+}
 
+.ContenedorInicio ul{
+    margin: 0;
+}
+nav{
+   width: 100vw;
+}
+.nav-items{
+   margin: 0;
+   font-size: 10px;
+   padding: 0px;
+}
+.baner{
+    
+    width: 100vw;
+    height: 600px;
+}
+
+.suna {
+    font-size: 50px;
+  
+}
     .modal-contenedor {
         width: 510px;
         height: 60vh;
@@ -346,6 +415,7 @@ footer p {
         width: 100%;
         height: 65px;
         font-size: 20px;
+    
 
     }
 
@@ -355,12 +425,55 @@ footer p {
     }
 
 
-    
-    .miContenedor2{
-        width:230vw;
+
+    .miContenedor2 {
+        width: 100vw;
+        height: 160vh;
         margin: 0 auto;
-      display: inline-block;
-      justify-content: center;
-      align-items: center;
+
     }
+
+    .foto-carne {
+        width: 100px;
+        height: 100px;
+
+
+    }
+    footer {
+        
+        width: 100vw;
+        height: auto;
+    }
+
+    .enlacesFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: space-around;
+        padding-top: 0;
+        height: 78%;
+       
+    }
+
+    .contenidoFooter {
+        height: 500px;
+    }
+
+    .contenidoFooter img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .enlaces {
+       
+        height: 30%;
+        width: 100%;
+        margin: 30px;
+    }
+
+    .copyRight {
+   padding: 10px;
+        width: 80%;
+    }
+
 }

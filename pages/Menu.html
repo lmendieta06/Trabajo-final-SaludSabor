@@ -98,7 +98,7 @@
             <!-- 2. las filas -->
             <div class="row misProductos">
                 <!--  3. las columnas con los breakpoints  -->
-                <div class="col-6 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <!-- 3. los componentes de bootstrap con la apariencia deseada -->
                     <!-- Esta es mi tarjeta! -->
                     <div class="card border bg-light mx-auto" style="width: 20rem;">
@@ -117,7 +117,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <!-- 3. los componentes de bootstrap con la apariencia deseada -->
                     <!-- Esta es mi tarjeta! -->
                     <div class="card border bg-light mx-auto" style="width: 20rem;">
@@ -246,8 +246,8 @@
     </a>
 </section>    
 <h2 class="titulosDeSeccion">PASTAS</h2>
-<section class="container miContenedor2" id="pastas">
-    <div class="card mb-3 mx-auto primero" style="max-width: 530px;">
+<section class="container miContenedor2 " id="pastas">
+    <div class="card mb-3 mx-auto primero " style="max-width: 530px;">
         <div class="row g-5">
             
             <h5 class="card-title text-center text-success fw-bolder pt-5">TAGLIATELLE NAPOLITANA</h5>
@@ -306,9 +306,9 @@
           </div>
           <!-- 4tO PLATO -->
           <div class="card mb-3 mx-auto cuarto " style="max-width: 540px;">
-            <div class="row g-5">
+            <div class="row g-5 ">
                 <h5 class="card-title text-center text-success fw-bolder pt-5">PESCADO LATINO</h5>
-              <div class="col-md-5">
+              <div class="col-md-5 ">
                 
                 <img src="../assets/IMAGENES PARA PROYECTO FINAL/MenuComidas/lasaña.png" class="foto-carne" alt="Foto-carne">
               </div>
@@ -336,41 +336,45 @@
 
     </main>
     <footer id="pieDePagina">
-        <div class="contenidoFooter">
-            <article class="enlaces">
-                <h2 class="hdos">Contactanos</h2>
-                <div class="redes">
-                    <i class="bi bi-telephone-fill"></i>
-                    <h3 class="htres">+57 321 459 7632</h3>
-                </div>
-                <div class="redes">
-                    <i class="bi bi-instagram"></i>
-                    <a href="#">
-                        <h3 class="htres">@salud_sabor</h3>
-                    </a>
-                </div>
-            </article>
-            <article class="enlaces">
-                <h2 class="hdos">Terminos y condiciones</h2>
-                <div class="infoFooter">
-                    <a href="#">Terminos legales</a>
-                    <a href="#">Politicas de seguridad</a>
-                </div>
-            </article>
-            <article class="enlaces">
-                <h2 class="hdos">Navega</h2>
-                <div class="infoFooter">
-                    <a href="#" class="boton-clave">Inicio Sesion</a>
-                    <a href="../index.html">Como funciona</a>
-                    <a href="./buscarCiudad.html">Realiza tu pedido</a>
-                </div>
-            </article>
-            <article>
-               <a href="index.html"><img src="../assets/IMAGENES PARA PROYECTO FINAL/logo verde.png" alt="logopng"></a> 
-            </article>
-        </div>
-        <p>Desarrollado por &copy; Salud & Sabor - Colombia</p>
-        </footer>
+      <div class="contenidoFooter">
+          <div class="enlacesFooter">
+              <article class="enlaces">
+                  <h2 class="hdos" >Contactanos</h2>
+                  <div class="redes">
+                      <i class="bi bi-telephone-fill"></i>
+                      <p>+57 321 459 7632</p>
+                  </div>
+                  <div class="redes">
+                      <i class="bi bi-instagram"></i>
+                      <a href="#">
+                          <p>@salud_sabor</p>
+                      </a>
+                  </div>
+              </article>
+              <article class="enlaces">
+                  <h2 class="hdos">Terminos y condiciones</h2>
+                  <div class="infoFooter">
+                      <a href="#">Terminos legales</a>
+                      <a href="#">Politicas de seguridad</a>
+                  </div>
+              </article>
+              <article class="enlaces">
+                  <h2 class="hdos">Navega</h2>
+                  <div class="infoFooter">
+                      <a href="#" class="boton-clave">Inicio Sesion</a>
+                      <a href="#funcionamiento">Como funciona</a>
+                      <a href="./pages/buscarCiudad.html">Realiza tu pedido</a>
+                  </div>
+              </article>
+          </div>
+          <article class="imgFooter">
+              <img src="../assets/IMAGENES PARA PROYECTO FINAL/logo verde.png" alt="logopng">
+          </article>
+      </div>
+      <div class="copyRight">
+          <p >Desarrollado por &copy; Salud & Sabor - Colombia</p>
+      </div>
+  </footer>
     <!-- MDB -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
