@@ -406,6 +406,9 @@ nav{
     font-size: 50px;
   
 }
+.titulosDeSeccion{
+    margin: 0 0 0 20px;
+}
     .modal-contenedor {
         width: 510px;
         height: 60vh;

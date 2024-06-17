@@ -70,7 +70,7 @@ body {
 
 .Eres-Increible {
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     background: #daac5632;
     display: flex;
     flex-direction: column;
@@ -79,12 +79,11 @@ body {
     font-family: var(--tipografiaTitulos);
 }
 .modal-titulo {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    color:var(--colorcontraste);
+ margin-top: 80px;
+
+color:var(--colortexto);
 
 
 }
